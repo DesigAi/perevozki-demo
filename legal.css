@@ -33,15 +33,17 @@
 @media(max-width:639px){
   .legal-page .site-shell::before{top:calc(20rem + 42rem)}
   .legal-main{--legal-gap:30rem;--legal-inner-gap:20rem;width:373rem}
-  .legal-breadcrumbs{font-size:13rem}
-  .legal-main h1{max-width:373rem;font-size:26rem;letter-spacing:-.25rem}
-  .legal-copy{font-size:15rem}
+  .legal-breadcrumbs{font-size:14rem}
+  .legal-main h1{max-width:373rem;font-size:27rem;letter-spacing:-.25rem}
+  .legal-copy{font-size:17rem}
+  .legal-copy ul{padding-left:18.75rem}
   .legal-copy section{margin-top:25rem}
   .legal-page .site-footer{margin-top:50rem}
 }
 @media(min-width:480px) and (max-width:639px){
   .legal-page .site-shell::before{top:calc(20rem + min(30rem,40px) + 12px)}
-  .legal-breadcrumbs{font-size:11rem}
-  .legal-main h1{font-size:min(26rem,34px)}
-  .legal-copy{font-size:min(15rem,18px)}
+  .legal-breadcrumbs{font-size:min(14rem,18px)}
+  .legal-main h1{font-size:min(27rem,34px)}
+  .legal-copy{font-size:min(17rem,22px)}
+  .legal-copy ul{padding-left:min(18.75rem,22.5px)}
 }

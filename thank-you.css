@@ -21,13 +21,13 @@
 @media(max-width:639px){
   .thank-you{width:383rem;margin-bottom:20rem;padding:50rem 20rem;border-radius:9rem}
   .thank-you__art{width:200rem}
-  .thank-you h1{margin-top:20rem;font-size:26rem;letter-spacing:-.25rem}
-  .thank-you__description{max-width:343rem;margin-top:20rem;font-size:15rem}
-  .thank-you__next{width:343rem;min-width:0;margin-top:30rem;padding:0;font-size:15rem}
+  .thank-you h1{margin-top:20rem;font-size:27rem;letter-spacing:-.25rem}
+  .thank-you__description{max-width:343rem;margin-top:20rem;font-size:17rem}
+  .thank-you__next{width:343rem;min-width:0;height:58rem;margin-top:30rem;padding:0;font-size:16rem}
 }
 
 @media(min-width:480px) and (max-width:639px){
-  .thank-you h1{font-size:min(26rem,34px)}
-  .thank-you__description{font-size:min(15rem,18px)}
-  .thank-you__next{height:min(52rem,60px);font-size:15px}
+  .thank-you h1{font-size:min(27rem,34px)}
+  .thank-you__description{font-size:min(17rem,22px)}
+  .thank-you__next{height:min(58rem,72px);font-size:min(16rem,20px)}
 }

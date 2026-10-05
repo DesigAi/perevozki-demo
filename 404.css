@@ -14,12 +14,12 @@
 @media(max-width:639px){
   .not-found{width:383rem;margin-bottom:20rem;padding:50rem 20rem;border-radius:9rem}
   .not-found__code{font-size:80rem;letter-spacing:-1rem}
-  .not-found h1{margin-top:20rem;font-size:26rem;letter-spacing:-.25rem}
-  .not-found__back{margin-top:30rem}
+  .not-found h1{margin-top:20rem;font-size:27rem;letter-spacing:-.25rem}
+  .not-found__back{height:58rem;margin-top:30rem;font-size:16rem}
 }
 
 @media(min-width:480px) and (max-width:639px){
   .not-found__code{font-size:min(80rem,104px)}
-  .not-found h1{font-size:min(26rem,34px)}
-  .not-found__back{height:min(52rem,60px);font-size:15px}
+  .not-found h1{font-size:min(27rem,34px)}
+  .not-found__back{height:min(58rem,72px);font-size:min(16rem,20px)}
 }
