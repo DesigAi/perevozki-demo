@@ -275,8 +275,10 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .quote-dialog__close img{width:26rem}
   .quote-dialog h2{font-size:27rem;line-height:1.1;margin:0 22rem 27rem 0;max-width:none}
   #quote-form{display:flex;flex-direction:column;gap:18rem}
-  .field{font-size:15rem;gap:5rem}.field input{height:50rem;font-size:17rem}.field textarea{height:68rem;font-size:17rem}
-  .phone-field{height:50rem}.phone-field__code{font-size:17rem}
+  /* Tighten only the space between field groups; consent and CTA gaps stay unchanged. */
+  #quote-form > .field + .field,.quick-quote__form > .field + .field{margin-top:-2rem}
+  .field{font-size:15rem;gap:5rem}.field input{height:52rem;font-size:17rem}.field textarea{height:70rem;font-size:17rem}
+  .phone-field{height:52rem}.phone-field__code{font-size:17rem}
   .consent{gap:8rem;margin:5rem 0 0;font-size:15rem}.quote-dialog__submit{height:58rem;width:343rem;margin-top:0;font-size:16rem}
   .quote-dialog__image{display:none}
 }
@@ -348,10 +350,11 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .quote-dialog h2{font-size:min(27rem,34px);margin:0 22px 27px 0}
   #quote-form{gap:18px}
   .field{font-size:15px;gap:5px}
-  .field input{height:50px;font-size:17px}
-  .phone-field{height:50px;gap:7px;padding:0 9px;border-width:2px;border-radius:6px}
+  #quote-form > .field + .field,.quick-quote__form > .field + .field{margin-top:-2px}
+  .field input{height:52px;font-size:17px}
+  .phone-field{height:52px;gap:7px;padding:0 9px;border-width:2px;border-radius:6px}
   .phone-field img{width:20px;height:14px}.phone-field__code{font-size:17px}
-  .field textarea{height:68px;font-size:17px}
+  .field textarea{height:70px;font-size:17px}
   .consent{gap:8px;margin:5px 0 0;font-size:15px}
   .quote-dialog__submit{width:100%;height:min(58rem,72px);margin-top:0;font-size:min(16rem,20px)}
 }
@@ -393,7 +396,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .service-card:nth-child(n+4){display:none}
   .services.is-expanded .service-card:nth-child(n+4){display:flex}
   .service-card__image{height:190rem}
-  .service-card h3{margin-top:20rem;font-size:21rem}
+  .service-card h3{margin-top:20rem;font-size:24rem}
   .service-card__description{margin-top:15rem;font-size:17rem}
   .service-card__features{margin-top:15rem;gap:10rem}
   .service-card__features li{padding-top:24rem;font-size:15rem}
@@ -406,7 +409,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 @media(min-width:480px) and (max-width:639px){
   .services__intro h2{font-size:min(27rem,34px)}
   .services__intro p,.service-card__description{font-size:min(17rem,22px)}
-  .service-card h3{font-size:min(21rem,28px)}
+  .service-card h3{font-size:min(24rem,32px)}
   .service-card__features li{font-size:min(15rem,20px)}
   .service-card__order{height:min(58rem,72px);font-size:min(16rem,20px)}
   .service-card__actions .social,.service-card__actions .social img{width:min(48rem,60px);height:min(48rem,60px)}
@@ -599,9 +602,9 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .quick-quote__form-panel h2{font-size:27rem}
   .quick-quote__form{--quick-row-gap:18rem;--quick-cta-height:58rem;--quick-cta-margin:0rem;width:343rem;display:flex;flex-direction:column;gap:18rem}
   .quick-quote__form .field{font-size:15rem;gap:5rem}
-  .quick-quote__form .field input{height:50rem;font-size:17rem}
+  .quick-quote__form .field input{height:52rem;font-size:17rem}
   .quick-quote__form .field .phone-field input{height:100%}
-  .quick-quote__form .field textarea{height:68rem;font-size:17rem}
+  .quick-quote__form .field textarea{height:70rem;font-size:17rem}
   .quick-quote__form .consent{margin:5rem 0 0;gap:8rem;font-size:15rem}
   .quick-quote__submit{width:343rem;height:58rem;margin-top:0;font-size:16rem}
   .quick-quote__photo-panel{height:auto;min-height:500rem;padding:var(--mobile-photo-gap,269.8rem) 20rem 40rem;border-radius:9rem;background-image:linear-gradient(180deg,transparent 15%,rgba(10,9,8,.52) 55%,rgba(10,9,8,.95) 88%,#0a0908 100%),var(--lazy-photo,url('./assets/04_quick-quote_background.png'));background-position:center,center}
@@ -621,8 +624,8 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .quick-quote__photo-content p{font-size:min(17rem,22px)}
   .quick-quote__form{--quick-row-gap:18px;--quick-cta-height:min(58rem,72px);gap:18px}
   .quick-quote__form .field{font-size:15px;gap:5px}
-  .quick-quote__form .field input{height:50px;font-size:17px}
-  .quick-quote__form .field textarea{height:68px;font-size:17px}
+  .quick-quote__form .field input{height:52px;font-size:17px}
+  .quick-quote__form .field textarea{height:70px;font-size:17px}
   .quick-quote__form .consent{gap:8px;font-size:15px}
   .quick-quote__submit{height:min(58rem,72px);font-size:min(16rem,20px)}
   .quick-quote__call{height:min(58rem,72px);font-size:min(16rem,20px)}
@@ -724,7 +727,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .process__desktop-break{display:none}
   .process__benefit-list{display:flex;flex-direction:column;gap:45rem;margin-top:50rem;padding-top:50rem}
   .process-benefit__icon{margin-bottom:14rem}
-  .process-benefit p{max-width:300rem}
+  .process-benefit p{max-width:325rem}
 }
 
 @media(min-width:480px) and (max-width:639px){
