@@ -1,0 +1,16 @@
+# Локальные зависимости и настройки размещения
+node_modules/
+.vercel/
+
+# Локальные переменные и ключи
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Временные файлы
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini

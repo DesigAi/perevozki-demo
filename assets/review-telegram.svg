@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="370" viewBox="0 0 300 370" role="img" aria-labelledby="title desc">
+  <title id="title">Демонстрационный пример переписки в стиле Telegram</title>
+  <desc id="desc">Пример оформления отзыва, не сообщение реального клиента.</desc>
+  <rect width="300" height="370" rx="8" fill="#e8f0f5"/>
+  <rect width="300" height="50" rx="8" fill="#368bb9"/><path d="M0 42h300v8H0z" fill="#368bb9"/>
+  <circle cx="28" cy="25" r="16" fill="#c8e7f8"/><text x="28" y="30" text-anchor="middle" fill="#217eaf" font-family="Arial,sans-serif" font-size="15" font-weight="700">П</text>
+  <text x="53" y="22" fill="white" font-family="Arial,sans-serif" font-size="13" font-weight="700">Перевозка · пример</text><text x="53" y="38" fill="#dceef7" font-family="Arial,sans-serif" font-size="10">демонстрационный чат</text>
+  <rect x="52" y="60" width="196" height="21" rx="10" fill="#d4e4ed"/><text x="150" y="74" text-anchor="middle" fill="#536b78" font-family="Arial,sans-serif" font-size="10">ДЕМОНСТРАЦИОННЫЙ МАКЕТ</text>
+  <rect x="15" y="96" width="246" height="72" rx="9" fill="white"/><text x="27" y="117" fill="#263742" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Добрый день! Подскажите, можно</tspan><tspan x="27" dy="17">ли заказать машину и помощь</tspan><tspan x="27" dy="17">с погрузкой мебели?</tspan></text>
+  <rect x="43" y="183" width="242" height="86" rx="9" fill="#d7ecfb"/><text x="55" y="204" fill="#263742" font-family="Arial,sans-serif" font-size="13"><tspan x="55">Да, обсудим размеры мебели,</tspan><tspan x="55" dy="17">адреса и условия подъёма.</tspan><tspan x="55" dy="17">Затем рассчитаем ваш заказ.</tspan></text>
+  <rect x="15" y="283" width="195" height="40" rx="9" fill="white"/><text x="27" y="308" fill="#263742" font-family="Arial,sans-serif" font-size="13">Хорошо, напишу детали.</text>
+  <rect x="0" y="342" width="300" height="28" fill="#f5f9fc"/><text x="150" y="360" text-anchor="middle" fill="#607885" font-family="Arial,sans-serif" font-size="11">Не отзыв клиента · образец оформления</text>
+</svg>

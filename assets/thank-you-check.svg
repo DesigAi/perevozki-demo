@@ -1,0 +1,11 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Заявка получена</title>
+  <defs>
+    <filter id="shadow" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <circle cx="36" cy="36" r="27" fill="#1F160B" fill-opacity="0.14" filter="url(#shadow)"/>
+  <circle cx="36" cy="36" r="26" fill="#54AF69" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M24 36L32 44L48 27" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

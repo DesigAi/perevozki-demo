@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="370" viewBox="0 0 300 370" role="img" aria-labelledby="title desc">
+  <title id="title">Демонстрационный пример переписки в стиле WhatsApp</title>
+  <desc id="desc">Пример оформления отзыва, не сообщение реального клиента.</desc>
+  <rect width="300" height="370" rx="8" fill="#e8efe9"/>
+  <rect width="300" height="50" rx="8" fill="#075e54"/><path d="M0 42h300v8H0z" fill="#075e54"/>
+  <circle cx="28" cy="25" r="16" fill="#c9e7d1"/><text x="28" y="30" text-anchor="middle" fill="#075e54" font-family="Arial,sans-serif" font-size="15" font-weight="700">К</text>
+  <text x="53" y="22" fill="white" font-family="Arial,sans-serif" font-size="13" font-weight="700">Чат о перевозке</text><text x="53" y="38" fill="#d6eee6" font-family="Arial,sans-serif" font-size="10">пример переписки</text>
+  <rect x="52" y="60" width="196" height="21" rx="10" fill="#d8e3de"/><text x="150" y="74" text-anchor="middle" fill="#50675f" font-family="Arial,sans-serif" font-size="10">ДЕМОНСТРАЦИОННЫЙ МАКЕТ</text>
+  <rect x="15" y="96" width="223" height="72" rx="9" fill="white"/><text x="27" y="117" fill="#25352d" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Здравствуйте! Нужно перевезти</tspan><tspan x="27" dy="17">диван и несколько коробок.</tspan><tspan x="27" dy="17">Как уточнить стоимость?</tspan></text>
+  <rect x="55" y="183" width="230" height="86" rx="9" fill="#d7f6cf"/><text x="67" y="204" fill="#25352d" font-family="Arial,sans-serif" font-size="13"><tspan x="67">Уточним адреса, этаж и объём</tspan><tspan x="67" dy="17">вещей. После этого подскажем</tspan><tspan x="67" dy="17">подходящий формат перевозки.</tspan></text>
+  <rect x="15" y="283" width="173" height="40" rx="9" fill="white"/><text x="27" y="308" fill="#25352d" font-family="Arial,sans-serif" font-size="13">Спасибо, всё понятно!</text>
+  <rect x="0" y="342" width="300" height="28" fill="#f5faf6"/><text x="150" y="360" text-anchor="middle" fill="#61766b" font-family="Arial,sans-serif" font-size="11">Не отзыв клиента · образец оформления</text>
+</svg>

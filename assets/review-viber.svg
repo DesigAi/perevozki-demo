@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="370" viewBox="0 0 300 370" role="img" aria-labelledby="title desc">
+  <title id="title">Демонстрационный пример переписки в стиле Viber</title>
+  <desc id="desc">Пример оформления отзыва, не сообщение реального клиента.</desc>
+  <rect width="300" height="370" rx="8" fill="#f0edf5"/>
+  <rect width="300" height="50" rx="8" fill="#7653a2"/><path d="M0 42h300v8H0z" fill="#7653a2"/>
+  <circle cx="28" cy="25" r="16" fill="#e8dcf4"/><text x="28" y="30" text-anchor="middle" fill="#684195" font-family="Arial,sans-serif" font-size="15" font-weight="700">В</text>
+  <text x="53" y="22" fill="white" font-family="Arial,sans-serif" font-size="13" font-weight="700">Диалог о переезде</text><text x="53" y="38" fill="#eee4f8" font-family="Arial,sans-serif" font-size="10">пример переписки</text>
+  <rect x="52" y="60" width="196" height="21" rx="10" fill="#e2d9eb"/><text x="150" y="74" text-anchor="middle" fill="#695c76" font-family="Arial,sans-serif" font-size="10">ДЕМОНСТРАЦИОННЫЙ МАКЕТ</text>
+  <rect x="15" y="96" width="230" height="72" rx="9" fill="white"/><text x="27" y="117" fill="#342c3c" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Здравствуйте. Планируем</tspan><tspan x="27" dy="17">квартирный переезд. Можно</tspan><tspan x="27" dy="17">обсудить упаковку вещей?</tspan></text>
+  <rect x="39" y="183" width="246" height="86" rx="9" fill="#e6d9f4"/><text x="51" y="204" fill="#342c3c" font-family="Arial,sans-serif" font-size="13"><tspan x="51">Конечно. Расскажите, какие</tspan><tspan x="51" dy="17">вещи нужно упаковать, и мы</tspan><tspan x="51" dy="17">согласуем состав работ.</tspan></text>
+  <rect x="15" y="283" width="203" height="40" rx="9" fill="white"/><text x="27" y="308" fill="#342c3c" font-family="Arial,sans-serif" font-size="13">Спасибо, подготовлю список.</text>
+  <rect x="0" y="342" width="300" height="28" fill="#faf8fc"/><text x="150" y="360" text-anchor="middle" fill="#73647f" font-family="Arial,sans-serif" font-size="11">Не отзыв клиента · образец оформления</text>
+</svg>

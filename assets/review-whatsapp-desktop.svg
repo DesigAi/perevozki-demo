@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="370" viewBox="0 0 300 370">
+  <rect width="300" height="370" rx="8" fill="#d8e8db"/>
+  <path d="M0 8a8 8 0 0 1 8-8h284a8 8 0 0 1 8 8v42H0z" fill="#075e54"/>
+  <circle cx="28" cy="25" r="16" fill="#c8e9d0"/><text x="28" y="30" text-anchor="middle" fill="#075e54" font-family="Arial,sans-serif" font-size="15" font-weight="700">К</text>
+  <text x="53" y="22" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Квартирный переезд</text><text x="53" y="38" fill="#d9f1e5" font-family="Arial,sans-serif" font-size="10">переписка</text>
+  <rect x="14" y="69" width="270" height="108" rx="11" fill="#fff"/>
+  <text x="27" y="91" fill="#24352d" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Спасибо за переезд! Ребята</tspan><tspan x="27" dy="18">приехали в согласованное время,</tspan><tspan x="27" dy="18">аккуратно вынесли диван и коробки.</tspan><tspan x="27" dy="18">Всё доехало целым.</tspan></text>
+  <rect x="49" y="192" width="237" height="69" rx="11" fill="#b8e3b3"/>
+  <text x="62" y="215" fill="#24352d" font-family="Arial,sans-serif" font-size="13"><tspan x="62">Спасибо за обратную связь!</tspan><tspan x="62" dy="18">Рады, что всё прошло</tspan><tspan x="62" dy="18">спокойно.</tspan></text>
+  <rect x="14" y="277" width="270" height="72" rx="11" fill="#fff"/>
+  <text x="27" y="301" fill="#24352d" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Отдельно спасибо за помощь</tspan><tspan x="27" dy="18">с тяжёлой мебелью!</tspan></text>
+</svg>

@@ -1,0 +1,9 @@
+# Документация и генератор остаются в GitHub, но не публикуются как файлы сайта.
+README.md
+build-legal-pages.mjs
+.git/
+.gitignore
+.env
+.env.*
+node_modules/
+*.log

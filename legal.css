@@ -1,0 +1,46 @@
+/* Technical pages inherit the main site's five Autoscale bands and shared chrome. */
+.legal-page .site-shell{position:relative}
+.legal-page .site-shell::before{content:"";position:absolute;top:70rem;left:0;width:100%;border-top:1px solid rgb(31 22 11 / 12%);pointer-events:none}
+.legal-main{--legal-gap:50rem;--legal-inner-gap:40rem;width:1280rem;margin:0 auto;padding-top:var(--legal-gap)}
+.legal-breadcrumbs{display:flex;align-items:baseline;gap:5rem;color:var(--ink-80);font-size:15rem;line-height:1.2}
+.legal-breadcrumbs a{color:rgb(31 22 11 / 50%)}
+.legal-breadcrumbs a:hover{color:var(--bronze)}
+.legal-main h1{max-width:710rem;margin:var(--legal-inner-gap) 0 0;color:var(--ink);font:600 36rem/1.1 Manrope,"Segoe UI",Arial,sans-serif;letter-spacing:-.35rem}
+.legal-copy{margin-top:var(--legal-inner-gap);color:var(--ink-80);font-size:18rem;line-height:1.2;overflow-wrap:anywhere}
+.legal-copy section{margin-top:30rem}
+.legal-copy h2{margin:0 0 5rem;color:inherit;font:600 1em/1.2 Roboto,Arial,sans-serif}
+.legal-copy p{margin:0 0 12rem}
+.legal-copy p:last-child{margin-bottom:0}
+.legal-copy ul{margin:0 0 12rem;padding-left:1.25em}
+.legal-copy li{padding-left:3rem}
+.legal-copy strong{font-weight:600;color:inherit}
+.legal-copy a{color:var(--bronze);text-decoration:underline;text-underline-offset:2px}
+.legal-page .site-footer{margin-top:100rem}
+@media(min-width:640px) and (max-width:1199px){
+  .legal-page .site-shell::before{top:56px}
+  .legal-main{--legal-gap:min(40px,3.90625vw);--legal-inner-gap:calc(var(--legal-gap) - 10px);width:920rem}
+  .legal-breadcrumbs{font-size:13rem}
+  .legal-main h1{max-width:820rem;font-size:clamp(26px,32rem,34px)}
+  .legal-copy{font-size:clamp(16px,17rem,18px)}
+  .legal-page .site-footer{margin-top:min(80px,7.8125vw)}
+}
+@media(min-width:640px) and (max-width:979px){
+  .legal-breadcrumbs{font-size:max(13rem,14px)}
+}
+@media(min-width:980px) and (max-width:1199px){
+  .legal-breadcrumbs{font-size:clamp(14px,calc(2.5vw - 10.5px),15px)}
+}
+@media(max-width:639px){
+  .legal-page .site-shell::before{top:48rem}
+  .legal-main{--legal-gap:30rem;--legal-inner-gap:20rem;width:373rem}
+  .legal-breadcrumbs{font-size:13rem}
+  .legal-main h1{max-width:373rem;font-size:26rem;letter-spacing:-.25rem}
+  .legal-copy{font-size:15rem}
+  .legal-copy section{margin-top:25rem}
+  .legal-page .site-footer{margin-top:50rem}
+}
+@media(min-width:480px) and (max-width:639px){
+  .legal-breadcrumbs{font-size:11rem}
+  .legal-main h1{font-size:min(26rem,34px)}
+  .legal-copy{font-size:min(15rem,18px)}
+}

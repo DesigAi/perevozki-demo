@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" role="img" aria-label="Флаг Беларуси">
+  <rect width="20" height="14" rx="1" fill="#fff"/>
+  <path fill="#c83132" d="M3 0h17v9H3z"/>
+  <path fill="#00a05a" d="M3 9h17v5H3z"/>
+  <path fill="#c83132" d="M0 0h1v2H0zm1 2h1v2H1zM0 4h1v2H0zm1 6h1v2H1zM0 12h1v2H0zm1-6h1v2H1z"/>
+</svg>

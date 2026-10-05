@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="370" viewBox="0 0 300 370">
+  <rect width="300" height="370" rx="8" fill="#eadfcf"/>
+  <path d="M0 8a8 8 0 0 1 8-8h284a8 8 0 0 1 8 8v42H0z" fill="#9f764b"/>
+  <circle cx="28" cy="25" r="16" fill="#f0dec8"/><text x="28" y="30" text-anchor="middle" fill="#8a6238" font-family="Arial,sans-serif" font-size="15" font-weight="700">П</text>
+  <text x="53" y="22" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Письмо после перевозки</text><text x="53" y="38" fill="#f5e9d9" font-family="Arial,sans-serif" font-size="10">электронная почта</text>
+  <rect x="14" y="69" width="272" height="280" rx="10" fill="#fff"/>
+  <text x="27" y="94" fill="#706357" font-family="Arial,sans-serif" font-size="12">Тема: Спасибо за перевозку</text>
+  <path d="M27 106h246" stroke="#e8e1d9"/>
+  <text x="27" y="130" fill="#332d27" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Здравствуйте!</tspan><tspan x="27" dy="27">Спасибо за перевозку мебели.</tspan><tspan x="27" dy="18">Всё прошло организованно:</tspan><tspan x="27" dy="18">машину подали ко времени,</tspan><tspan x="27" dy="18">диван и шкаф защитили</tspan><tspan x="27" dy="18">перед погрузкой.</tspan><tspan x="27" dy="27">Доставили без повреждений,</tspan><tspan x="27" dy="18">занесли вещи в квартиру.</tspan><tspan x="27" dy="27">Благодарю всю команду!</tspan></text>
+</svg>

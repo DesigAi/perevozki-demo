@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="370" viewBox="0 0 300 370" role="img" aria-labelledby="title desc">
+  <title id="title">Демонстрационный пример переписки по электронной почте</title>
+  <desc id="desc">Пример оформления отзыва, не сообщение реального клиента.</desc>
+  <rect width="300" height="370" rx="8" fill="#f8f6f2"/>
+  <rect width="300" height="50" rx="8" fill="#ae8659"/><path d="M0 42h300v8H0z" fill="#ae8659"/>
+  <circle cx="28" cy="25" r="16" fill="#f0dec8"/><text x="28" y="30" text-anchor="middle" fill="#8a6238" font-family="Arial,sans-serif" font-size="15" font-weight="700">П</text>
+  <text x="53" y="22" fill="white" font-family="Arial,sans-serif" font-size="13" font-weight="700">Письмо о перевозке</text><text x="53" y="38" fill="#f5e9d9" font-family="Arial,sans-serif" font-size="10">пример переписки</text>
+  <rect x="52" y="60" width="196" height="21" rx="10" fill="#e9e0d5"/><text x="150" y="74" text-anchor="middle" fill="#786b5e" font-family="Arial,sans-serif" font-size="10">ДЕМОНСТРАЦИОННЫЙ МАКЕТ</text>
+  <rect x="15" y="96" width="270" height="205" rx="9" fill="white" stroke="#e9e2d9"/>
+  <text x="28" y="121" fill="#655d55" font-family="Arial,sans-serif" font-size="12">Тема: Уточнение заказа</text>
+  <path d="M28 134h244" stroke="#e8e4df"/>
+  <text x="28" y="158" fill="#342f2a" font-family="Arial,sans-serif" font-size="13"><tspan x="28">Здравствуйте!</tspan><tspan x="28" dy="23">Подскажите, какие данные нужны</tspan><tspan x="28" dy="17">для расчёта перевозки?</tspan><tspan x="28" dy="27">У нас несколько предметов мебели</tspan><tspan x="28" dy="17">и коробки. Можем прислать</tspan><tspan x="28" dy="17">фотографии и адреса.</tspan></text>
+  <text x="28" y="285" fill="#8c8074" font-family="Arial,sans-serif" font-size="11">Пример письма, не реальный отзыв</text>
+  <rect x="0" y="342" width="300" height="28" fill="#fcfaf8"/><text x="150" y="360" text-anchor="middle" fill="#7e7368" font-family="Arial,sans-serif" font-size="11">Не отзыв клиента · образец оформления</text>
+</svg>

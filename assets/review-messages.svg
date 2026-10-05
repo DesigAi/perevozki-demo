@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="370" viewBox="0 0 300 370" role="img" aria-labelledby="title desc">
+  <title id="title">Демонстрационный пример переписки в стиле SMS</title>
+  <desc id="desc">Пример оформления отзыва, не сообщение реального клиента.</desc>
+  <rect width="300" height="370" rx="8" fill="#f1f2f4"/>
+  <rect width="300" height="50" rx="8" fill="#343d4a"/><path d="M0 42h300v8H0z" fill="#343d4a"/>
+  <circle cx="28" cy="25" r="16" fill="#dce3e9"/><text x="28" y="30" text-anchor="middle" fill="#394450" font-family="Arial,sans-serif" font-size="15" font-weight="700">C</text>
+  <text x="53" y="22" fill="white" font-family="Arial,sans-serif" font-size="13" font-weight="700">Сообщения</text><text x="53" y="38" fill="#dae0e6" font-family="Arial,sans-serif" font-size="10">демонстрационный диалог</text>
+  <rect x="52" y="60" width="196" height="21" rx="10" fill="#dce1e6"/><text x="150" y="74" text-anchor="middle" fill="#606a73" font-family="Arial,sans-serif" font-size="10">ДЕМОНСТРАЦИОННЫЙ МАКЕТ</text>
+  <rect x="15" y="96" width="239" height="72" rx="15" fill="white"/><text x="27" y="117" fill="#303942" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Нужно доставить материалы</tspan><tspan x="27" dy="17">для ремонта. Какой объём</tspan><tspan x="27" dy="17">можно указать в заявке?</tspan></text>
+  <rect x="43" y="183" width="242" height="86" rx="15" fill="#d8e8fd"/><text x="55" y="204" fill="#303942" font-family="Arial,sans-serif" font-size="13"><tspan x="55">Укажите количество, вес</tspan><tspan x="55" dy="17">и размеры материалов. Так</tspan><tspan x="55" dy="17">будет проще подобрать машину.</tspan></text>
+  <rect x="15" y="283" width="206" height="40" rx="15" fill="white"/><text x="27" y="308" fill="#303942" font-family="Arial,sans-serif" font-size="13">Понял, уточню параметры.</text>
+  <rect x="0" y="342" width="300" height="28" fill="#fafbfc"/><text x="150" y="360" text-anchor="middle" fill="#67717c" font-family="Arial,sans-serif" font-size="11">Не отзыв клиента · образец оформления</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="370" viewBox="0 0 300 370">
+  <rect width="300" height="370" rx="8" fill="#dce5ef"/>
+  <path d="M0 8a8 8 0 0 1 8-8h284a8 8 0 0 1 8 8v42H0z" fill="#343d4a"/>
+  <circle cx="28" cy="25" r="16" fill="#dce3e9"/><text x="28" y="30" text-anchor="middle" fill="#394450" font-family="Arial,sans-serif" font-size="15" font-weight="700">С</text>
+  <text x="53" y="22" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Доставка материалов</text><text x="53" y="38" fill="#dde3ea" font-family="Arial,sans-serif" font-size="10">сообщения</text>
+  <rect x="14" y="69" width="272" height="108" rx="14" fill="#fff"/>
+  <text x="27" y="91" fill="#2f3943" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Стройматериалы привезли</tspan><tspan x="27" dy="18">в оговорённое время. Водитель</tspan><tspan x="27" dy="18">и грузчики помогли разгрузить</tspan><tspan x="27" dy="18">и занести тяжёлые коробки.</tspan></text>
+  <rect x="60" y="192" width="226" height="69" rx="14" fill="#b9d2f1"/>
+  <text x="73" y="215" fill="#2f3943" font-family="Arial,sans-serif" font-size="13"><tspan x="73">Спасибо за отзыв!</tspan><tspan x="73" dy="18">Были рады помочь вам</tspan><tspan x="73" dy="18">с доставкой.</tspan></text>
+  <rect x="14" y="277" width="272" height="72" rx="14" fill="#fff"/>
+  <text x="27" y="301" fill="#2f3943" font-family="Arial,sans-serif" font-size="13"><tspan x="27">Всё отлично, будем обращаться</tspan><tspan x="27" dy="18">ещё при ремонте.</tspan></text>
+</svg>

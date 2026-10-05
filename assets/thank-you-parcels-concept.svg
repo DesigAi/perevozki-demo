@@ -1,0 +1,31 @@
+<svg width="210" height="190" viewBox="14 32 210 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Две посылки</title>
+  <desc id="description">Две посылки стоят друг на друге.</desc>
+
+  <ellipse cx="119" cy="211" rx="92" ry="10" fill="#1F160B" fill-opacity="0.08"/>
+  <path d="M26 119H39M18 129H33M194 173H210" stroke="#BF8B4D" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round"/>
+
+  <g id="parcel-bottom" stroke="#805E3D" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M49 118L69 99H188L168 118H49Z" fill="#FFF8F0"/>
+    <path d="M168 118L188 99V180L168 199V118Z" fill="#D9AE7A"/>
+    <path d="M49 118H168V199H49V118Z" fill="#F4E7D5"/>
+    <path d="M111 118L131 99H148L128 118H111Z" fill="#D9AE7A" stroke="none"/>
+    <path d="M111 119H128V198H111V119Z" fill="#E8C79F" stroke="none"/>
+    <path d="M112 118H127M112 199H127" stroke="#805E3D" stroke-width="2.5"/>
+    <path d="M67 168H94M67 176H84" stroke="#BF8B4D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M178 119V176" stroke="#FFF8F0" stroke-opacity="0.48" stroke-width="2"/>
+  </g>
+
+  <ellipse cx="128" cy="117" rx="42" ry="6" fill="#1F160B" fill-opacity="0.08"/>
+
+  <g id="parcel-top" stroke="#805E3D" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M92 64L105 51H165L152 64H92Z" fill="#FFFFFF"/>
+    <path d="M152 64L165 51V105L152 118V64Z" fill="#C99459"/>
+    <path d="M92 64H152V118H92V64Z" fill="#FFF6EB"/>
+    <path d="M116 64L129 51H138L125 64H116Z" fill="#D9AE7A" stroke="none"/>
+    <path d="M116 65H125V117H116V65Z" fill="#E8C79F" stroke="none"/>
+    <path d="M116 64H125M116 118H125" stroke="#805E3D"/>
+    <path d="M101 94H108" stroke="#BF8B4D" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+</svg>
