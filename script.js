@@ -88,10 +88,13 @@ function updateScale() {
     lastViewportWidth = viewportWidth;
     availableWidthFloor = Infinity;
   }
-  const measuredWidth = document.body.clientWidth || document.documentElement.clientWidth || viewportWidth;
-  // If scaling removes a scrollbar, keep the narrower canvas until the next
-  // viewport resize. This prevents a one-scrollbar-width feedback loop.
-  availableWidthFloor = Math.min(availableWidthFloor, measuredWidth);
+  const mobile = viewportWidth < 640;
+  const measuredWidth = mobile
+    ? document.documentElement.clientWidth || viewportWidth
+    : document.body.clientWidth || document.documentElement.clientWidth || viewportWidth;
+  // Mobile follows the current layout width, including recovery after loading
+  // or closing an overlay. Only tablet/desktop retain the scrollbar safeguard.
+  availableWidthFloor = mobile ? measuredWidth : Math.min(availableWidthFloor, measuredWidth);
   const band = getWidthBand(viewportWidth);
   document.documentElement.dataset.widthBand = band.name;
   document.documentElement.style.fontSize = `${availableWidthFloor / band.reference}px`;

@@ -65,8 +65,13 @@ function updateScale() {
     lastViewportWidth = viewportWidth;
     availableWidthFloor = Infinity;
   }
-  const measuredWidth = document.body.clientWidth || document.documentElement.clientWidth || viewportWidth;
-  availableWidthFloor = Math.min(availableWidthFloor, measuredWidth);
+  const mobile = viewportWidth < 640;
+  const measuredWidth = mobile
+    ? document.documentElement.clientWidth || viewportWidth
+    : document.body.clientWidth || document.documentElement.clientWidth || viewportWidth;
+  // Keep mobile in sync with the current layout width; preserve the existing
+  // scrollbar safeguard for tablet/desktop, as on the main page.
+  availableWidthFloor = mobile ? measuredWidth : Math.min(availableWidthFloor, measuredWidth);
   const reference = viewportWidth < 640 ? 393 : viewportWidth < 1200 ? 960 : 1400;
   document.documentElement.style.fontSize = `${availableWidthFloor / reference}px`;
   updateSticky();

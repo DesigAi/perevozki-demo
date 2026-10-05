@@ -242,6 +242,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .mobile-sticky__header{width:373rem;height:48rem;margin:auto;display:flex;align-items:center;justify-content:space-between}
   .sticky-brand{display:flex;align-items:center;gap:6rem}
   .mobile-sticky--bottom{bottom:0;height:calc(60rem + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);transform:translateY(105%)}
+  .mobile-sticky--bottom::after{content:"";position:absolute;left:0;right:0;bottom:0;height:env(safe-area-inset-bottom);background:var(--bronze);pointer-events:none}
   .mobile-sticky__contacts{width:383rem;height:60rem;margin:auto;padding:11rem 6rem;display:flex;gap:5rem;background:var(--bronze);border-radius:8rem 8rem 0 0}
   .sticky-call{height:36rem;flex:1;border:1rem solid white;border-radius:7rem;display:flex;align-items:center;justify-content:center;gap:4rem;color:#fff;font-size:15rem;white-space:nowrap}
   .sticky-call img{transform:scale(.7);flex:none}
