@@ -31,7 +31,8 @@ function page({ file, title, description, crumb, heading, content }) {
     .replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${title}">`)
     .replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${description}">`)
     .replace('<link rel="stylesheet" href="./styles.css">', '<link rel="stylesheet" href="./styles.css">\n  <link rel="stylesheet" href="./legal.css">')
-    .replace('<script src="./script.js" defer></script>', '<script src="./legal.js" defer></script>');
+    .replace('<script src="./script.js" defer></script>', '<script src="./legal.js" defer></script>')
+    .replace('<script src="./mobile-contact-spacing.js" defer></script>', '');
   const shared = (headAndHeader + sharedEnd).replace(/href="#([^"]+)"/g, 'href="./index.html#$1"');
   const main = `    <main class="legal-main" id="legal-content">
       <nav class="legal-breadcrumbs" aria-label="Хлебные крошки"><a href="./index.html">Главная</a><span aria-hidden="true">/</span><span aria-current="page">${protectShortWords(crumb)}</span></nav>

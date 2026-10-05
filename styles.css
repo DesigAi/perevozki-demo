@@ -584,7 +584,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 @media(max-width:639px){
   .reviews{width:373rem;margin-bottom:50rem}
   .reviews__heading{margin-bottom:30rem}
-  .reviews h2{max-width:min(335rem,430px);font-size:26rem}
+  .reviews h2{max-width:min(335rem,430px);font-size:27rem}
   .reviews__desktop-break,.reviews__controls{display:none}
   .reviews__track{gap:10rem}
   .reviews__track picture{flex-basis:285rem;width:285rem}
@@ -601,26 +601,28 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .quick-quote__form .field textarea{height:68rem;font-size:17rem}
   .quick-quote__form .consent{margin:5rem 0 0;gap:8rem;font-size:15rem}
   .quick-quote__submit{width:343rem;height:58rem;margin-top:0;font-size:16rem}
-  .quick-quote__photo-panel{height:500rem;border-radius:9rem;background-image:linear-gradient(180deg,transparent 15%,rgba(10,9,8,.52) 55%,rgba(10,9,8,.95) 88%,#0a0908 100%),var(--lazy-photo,url('./assets/04_quick-quote_background.png'));background-position:center,center}
-  .quick-quote__photo-content{left:20rem;right:20rem;bottom:40rem}
-  .quick-quote__photo-content p{font-size:15rem}
-  .quick-quote__call{width:179rem;height:52rem;margin-right:5rem;gap:5rem;font-size:15rem}
+  .quick-quote__photo-panel{height:auto;min-height:500rem;padding:var(--mobile-photo-gap,269.8rem) 20rem 40rem;border-radius:9rem;background-image:linear-gradient(180deg,transparent 15%,rgba(10,9,8,.52) 55%,rgba(10,9,8,.95) 88%,#0a0908 100%),var(--lazy-photo,url('./assets/04_quick-quote_background.png'));background-position:center,center}
+  .quick-quote__photo-content{position:relative;left:auto;right:auto;bottom:auto}
+  .quick-quote__photo-content h2{font-size:27rem}
+  .quick-quote__photo-content p{font-size:17rem}
+  .quick-quote__call{width:184rem;height:58rem;margin-right:0;gap:5rem;font-size:16rem}
   .quick-quote__call img{width:18rem;height:18rem}
   .quick-quote__contacts .social,.quick-quote__contacts .social img{width:48rem;height:48rem}
 }
 
 @media(min-width:480px) and (max-width:639px){
-  .reviews h2{font-size:min(26rem,34px)}
+  .reviews h2{font-size:min(27rem,34px)}
   .quick-quote h2{font-size:min(26rem,34px)}
   .quick-quote__form-panel h2{font-size:min(27rem,34px)}
-  .quick-quote__photo-content p{font-size:min(15rem,18px)}
+  .quick-quote__photo-content h2{font-size:min(27rem,34px)}
+  .quick-quote__photo-content p{font-size:min(17rem,22px)}
   .quick-quote__form{--quick-row-gap:18px;--quick-cta-height:min(58rem,72px);gap:18px}
   .quick-quote__form .field{font-size:15px;gap:5px}
   .quick-quote__form .field input{height:50px;font-size:17px}
   .quick-quote__form .field textarea{height:68px;font-size:17px}
   .quick-quote__form .consent{gap:8px;font-size:15px}
   .quick-quote__submit{height:min(58rem,72px);font-size:min(16rem,20px)}
-  .quick-quote__call{height:min(52rem,60px);font-size:min(15rem,18px)}
+  .quick-quote__call{height:min(58rem,72px);font-size:min(16rem,20px)}
   .quick-quote__contacts .social,.quick-quote__contacts .social img{width:min(48rem,60px);height:min(48rem,60px)}
 }
 
@@ -700,18 +702,18 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .quick-quote{margin-bottom:20rem}
   .process{width:383rem;margin-bottom:50rem;padding:0;border-radius:0;background:none;overflow:visible}
   .process__intro{padding:40rem 20rem;border-radius:9rem;background:#fff}
-  .process__intro h2{width:100%;max-width:none;font-size:24rem}
+  .process__intro h2{width:100%;max-width:none;font-size:27rem}
   .process__intro h2 span{display:inline}
   .process__stages{display:flex;flex-direction:column;gap:45rem;margin-top:35rem}
   .process-step{display:grid;grid-template-columns:32rem minmax(0,1fr);gap:20rem}
   .process-step__content{margin-top:0}
-  .process-step h3,.process-benefit h3{font-size:22rem}
-  .process-step p,.process-benefit p{margin-top:15rem;font-size:15rem}
+  .process-step h3,.process-benefit h3{font-size:24rem}
+  .process-step p,.process-benefit p{margin-top:15rem;font-size:17rem}
   .process-step p{max-width:291rem}
   .process__line{width:4rem;height:var(--line-length,0px);transform:translateX(-50%)}
   .process__line-fill{transform:scaleY(var(--process-progress));transform-origin:center top}
   .process__benefits{min-height:0;margin-top:5rem;padding:40rem 20rem;border-radius:9rem;background-image:linear-gradient(90deg,rgba(10,9,8,.82),rgba(10,9,8,.58)),linear-gradient(0deg,rgba(10,9,8,.75),transparent 85%),var(--lazy-photo,url('./assets/05_process_background.png'));background-position:center,center,62% center}
-  .process__benefits h2{max-width:343rem;font-size:26rem}
+  .process__benefits h2{max-width:343rem;font-size:27rem}
   .process__desktop-break{display:none}
   .process__benefit-list{display:flex;flex-direction:column;gap:45rem;margin-top:50rem;padding-top:50rem}
   .process-benefit__icon{margin-bottom:14rem}
@@ -719,10 +721,9 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 }
 
 @media(min-width:480px) and (max-width:639px){
-  .process__intro h2{font-size:min(24rem,34px)}
-  .process__benefits h2{font-size:min(26rem,34px)}
-  .process-step h3,.process-benefit h3{font-size:min(22rem,29px)}
-  .process-step p,.process-benefit p{font-size:min(15rem,18px)}
+  .process__intro h2,.process__benefits h2{font-size:min(27rem,34px)}
+  .process-step h3,.process-benefit h3{font-size:min(24rem,32px)}
+  .process-step p,.process-benefit p{font-size:min(17rem,22px)}
 }
 
 .gallery,.faq{width:1280rem;margin:0 auto 100rem}
@@ -789,17 +790,17 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 
 @media(max-width:639px){
   .gallery,.faq{width:373rem;margin-bottom:50rem}
-  .gallery h2,.faq h2{font-size:26rem}
+  .gallery h2,.faq h2{font-size:27rem}
   .gallery h2{max-width:320rem}
-  .gallery__lead{max-width:363rem;margin:20rem 0 30rem;font-size:15rem}
+  .gallery__lead{max-width:363rem;margin:20rem 0 30rem;font-size:17rem}
   .gallery__track{gap:10rem}
   .gallery__item{flex-basis:325rem;width:325rem;height:220rem;border-radius:9rem}
   .gallery__arrow{display:none}
   .faq h2{max-width:360rem;margin-bottom:30rem}
   .faq__columns{grid-template-columns:1fr;gap:10rem}
-  .faq-item__trigger{min-height:60rem;padding:12rem 15rem;font-size:15rem;gap:12rem;border-radius:9rem}
+  .faq-item__trigger{min-height:60rem;padding:12rem 15rem;font-size:16rem;line-height:1.15625;gap:12rem;border-radius:9rem}
   .faq-item__icon{flex-basis:32rem;width:32rem;height:32rem}
-  .faq-item__answer p{padding:15rem;font-size:14rem;border-radius:9rem}
+  .faq-item__answer p{padding:15rem;font-size:15rem;border-radius:9rem}
   .gallery-lightbox{position:fixed;top:max(16px,env(safe-area-inset-top));right:0;bottom:16px;left:0;width:calc(100vw - 32px);height:auto;max-height:none;margin:0 auto}
   .gallery-lightbox[open]{gap:0}
   .gallery-lightbox__stage{flex:1;grid-template-columns:1fr 1fr;column-gap:32px;row-gap:12px;align-content:center;overflow:visible}
@@ -810,10 +811,10 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 }
 
 @media(min-width:480px) and (max-width:639px){
-  .gallery h2,.faq h2{font-size:min(26rem,34px)}
-  .gallery__lead{font-size:min(15rem,18px)}
-  .faq-item__answer p{font-size:min(14rem,17px)}
-  .faq-item__trigger{font-size:min(15rem,18px)}
+  .gallery h2,.faq h2{font-size:min(27rem,34px)}
+  .gallery__lead{font-size:min(17rem,22px)}
+  .faq-item__answer p{font-size:min(15rem,20px)}
+  .faq-item__trigger{font-size:min(16rem,20px)}
 }
 
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.site-header .social:hover,.service-card__actions .social:hover,.gallery__item:hover img{transform:none}}
@@ -907,15 +908,15 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .final-contact,.site-footer{width:383rem}
   .site-footer{padding-bottom:calc(70rem + env(safe-area-inset-bottom))}
   .final-contact{align-items:stretch;min-height:400rem;margin-bottom:20rem;border-radius:9rem;background-image:linear-gradient(90deg,rgba(12,10,8,.64),rgba(12,10,8,.86)),var(--lazy-photo,url('./assets/08_final-contact_background.png'));background-position:center,30% center}
-  .final-contact__content{width:auto;min-height:400rem;margin:0;padding:35rem 20rem 40rem}
-  .final-contact h2{max-width:320rem;font-size:26rem}
+  .final-contact__content{width:auto;min-height:0;margin:0;padding:35rem 20rem 40rem}
+  .final-contact h2{max-width:320rem;font-size:27rem}
   .final-contact__mobile-break{display:inline}
-  .final-contact__lead{max-width:343rem;margin:20rem 0 30rem;font-size:15rem}
+  .final-contact__lead{max-width:343rem;margin:20rem 0 30rem;font-size:17rem}
   .final-contact__actions{gap:5rem}
-  .final-contact__call{width:179rem;height:52rem;margin-right:5rem;font-size:15rem;gap:5rem}
+  .final-contact__call{width:184rem;height:58rem;margin-right:0;font-size:16rem;gap:5rem}
   .final-contact__call img{width:18rem;height:18rem}
   .final-contact__actions .social,.final-contact__actions .social img{width:48rem;height:48rem}
-  .final-contact__hours{font-size:12rem}
+  .final-contact__hours{margin-top:var(--mobile-hours-gap,50.8rem);font-size:13rem}
   .site-footer__panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);column-gap:10rem;row-gap:0;min-height:0;padding:20rem 20rem 30rem;border-radius:9rem}
   .site-footer__brand,.site-footer__contacts{display:contents}
   .site-footer__brand-link{grid-column:1/-1;gap:6rem;font-size:12rem;line-height:1.06}
@@ -939,9 +940,9 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .site-footer__legal small{order:3;white-space:normal}
 }
 @media(min-width:480px) and (max-width:639px){
-  .final-contact h2{font-size:min(26rem,34px)}
-  .final-contact__lead{font-size:min(15rem,18px)}
-  .final-contact__call{height:min(52rem,60px);font-size:min(15rem,18px)}
+  .final-contact h2{font-size:min(27rem,34px)}
+  .final-contact__lead{font-size:min(17rem,22px)}
+  .final-contact__call{height:min(58rem,72px);font-size:min(16rem,20px)}
   .final-contact__actions .social,.final-contact__actions .social img{width:min(48rem,60px);height:min(48rem,60px)}
   .site-footer__brand-link{font-size:clamp(14px,9rem,17px)}
   .site-footer__column{font-size:min(13rem,16px)}
