@@ -31,7 +31,7 @@
   .legal-breadcrumbs{font-size:clamp(14px,calc(2.5vw - 10.5px),15px)}
 }
 @media(max-width:639px){
-  .legal-page .site-shell::before{top:48rem}
+  .legal-page .site-shell::before{top:calc(20rem + 42rem)}
   .legal-main{--legal-gap:30rem;--legal-inner-gap:20rem;width:373rem}
   .legal-breadcrumbs{font-size:13rem}
   .legal-main h1{max-width:373rem;font-size:26rem;letter-spacing:-.25rem}
@@ -40,6 +40,7 @@
   .legal-page .site-footer{margin-top:50rem}
 }
 @media(min-width:480px) and (max-width:639px){
+  .legal-page .site-shell::before{top:calc(20rem + min(30rem,40px) + 12px)}
   .legal-breadcrumbs{font-size:11rem}
   .legal-main h1{font-size:min(26rem,34px)}
   .legal-copy{font-size:min(15rem,18px)}

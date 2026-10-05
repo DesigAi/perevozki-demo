@@ -216,13 +216,14 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 
 @media(max-width:639px){
   .desktop-sticky{display:none}
-  main > section[id]{scroll-margin-top:58rem}
+  :root{--mobile-top-height:62rem}
+  main > section[id]{scroll-margin-top:calc(var(--mobile-top-height) + 10rem)}
   .site-shell{width:393rem;padding-top:10rem}
-  .site-header{width:373rem;height:28rem;margin:0 10rem 10rem;display:flex;justify-content:space-between;gap:0}
-  .brand{gap:6rem}.brand__mark{width:auto;height:28rem}.brand__caption{font-size:13rem;line-height:1.06}
+  .site-header{width:373rem;height:42rem;padding:6rem 0;margin:0 10rem 10rem;display:flex;justify-content:space-between;gap:0}
+  .brand{gap:6rem}.brand__mark{width:auto;height:30rem}.brand__caption{font-size:13.4rem;line-height:1.0671641791}
   .desktop-nav,.header-actions{display:none}
   .menu-toggle{width:44rem;height:44rem;border:0;background:transparent;padding:0;display:grid;place-items:center;flex:none}
-  .menu-toggle img{display:block;width:auto;height:28rem}
+  .menu-toggle img{display:block;width:auto;height:30rem}
   .hero{width:383rem;height:auto;min-height:600rem;margin:0 5rem;border-radius:8rem;background-image:linear-gradient(90deg,rgba(10,9,8,.81),rgba(10,9,8,.65)),url('./assets/01_hero_background.png');background-position:82% center}
   .hero__content{position:relative;display:flex;flex-direction:column;min-height:600rem;padding:38rem 20rem 42rem}
   .hero h1,.hero__lead,.hero__benefits{grid-column:1/-1}
@@ -241,8 +242,8 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .hero__actions .button--phone{font-size:18rem}
   .mobile-sticky{position:fixed;left:0;right:0;z-index:20;display:block;visibility:hidden;pointer-events:none;transition:transform .23s ease,visibility .23s ease}
   .mobile-sticky.is-visible{visibility:visible;pointer-events:auto;transform:translateY(0)}
-  .mobile-sticky--top{top:0;height:48rem;background:#fff;border-bottom:1px solid rgb(31 22 11 / 12%);transform:translateY(-105%)}
-  .mobile-sticky__header{width:373rem;height:48rem;margin:auto;display:flex;align-items:center;justify-content:space-between}
+  .mobile-sticky--top{top:0;height:var(--mobile-top-height);background:#fff;border-bottom:1px solid rgb(31 22 11 / 12%);transform:translateY(-105%)}
+  .mobile-sticky__header{width:373rem;height:var(--mobile-top-height);margin:auto;display:flex;align-items:center;justify-content:space-between}
   .sticky-brand{display:flex;align-items:center;gap:6rem}
   .mobile-sticky--bottom{bottom:0;height:calc(60rem + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);transform:translateY(105%)}
   .mobile-sticky--bottom::after{content:"";position:absolute;left:0;right:0;bottom:0;height:env(safe-area-inset-bottom);background:var(--bronze);pointer-events:none}
@@ -307,11 +308,13 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 /* 480–639: the horizontal-phone band keeps mobile Autoscale, but changes the
    density and places the CTAs side by side before the tablet composition. */
 @media(min-width:480px) and (max-width:639px){
-  main > section[id]{scroll-margin-top:calc(min(48rem,60px) + 10px)}
-  .site-header .brand__caption,.mobile-sticky .brand__caption{font-size:min(13rem,17px)}
-  .site-header .brand__mark,.mobile-sticky .brand__mark{height:28px}
-  .site-header .menu-toggle,.mobile-sticky .menu-toggle{width:44px;height:44px}
-  .site-header .menu-toggle img,.mobile-sticky .menu-toggle img{width:auto;height:28px}
+  :root{--mobile-top-height:calc(min(48rem,60px) + min(30rem,40px) - 28px + 12px)}
+  main > section[id]{scroll-margin-top:calc(var(--mobile-top-height) + 10px)}
+  .site-header{height:calc(min(30rem,40px) + 12px);padding:6px 0}
+  .site-header .brand__caption,.mobile-sticky .brand__caption{font-size:min(13.4rem,17px)}
+  .site-header .brand__mark,.mobile-sticky .brand__mark{height:min(30rem,40px)}
+  .site-header .menu-toggle,.mobile-sticky .menu-toggle{width:max(44px,calc(min(30rem,40px) * 1.2727272727));height:44px}
+  .site-header .menu-toggle img,.mobile-sticky .menu-toggle img{width:auto;height:min(30rem,40px)}
   .hero{max-height:none}
   .hero h1{font-size:26rem}
   .hero__lead{font-size:min(17rem,22px)}
@@ -320,7 +323,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .hero__actions .button{width:calc((100% - 8rem)/2);height:min(58rem,72px);font-size:min(16rem,20px)}
   .hero__actions .button--phone{font-size:12rem;gap:5rem}
   .hero__actions .button--phone img{width:16rem}
-  .mobile-sticky--top,.mobile-sticky__header{height:min(48rem,60px)}
+  .mobile-sticky--top,.mobile-sticky__header{height:var(--mobile-top-height)}
   .mobile-sticky--bottom{height:calc(72px + env(safe-area-inset-bottom))}
   .mobile-sticky__contacts{width:calc(100% - 10px);height:72px;padding:14px 8px}
   .sticky-call,.mobile-sticky .social{height:44px}
@@ -390,7 +393,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .service-card:nth-child(n+4){display:none}
   .services.is-expanded .service-card:nth-child(n+4){display:flex}
   .service-card__image{height:190rem}
-  .service-card h3{margin-top:20rem;font-size:24rem}
+  .service-card h3{margin-top:20rem;font-size:21rem}
   .service-card__description{margin-top:15rem;font-size:17rem}
   .service-card__features{margin-top:15rem;gap:10rem}
   .service-card__features li{padding-top:24rem;font-size:15rem}
@@ -403,7 +406,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 @media(min-width:480px) and (max-width:639px){
   .services__intro h2{font-size:min(27rem,34px)}
   .services__intro p,.service-card__description{font-size:min(17rem,22px)}
-  .service-card h3{font-size:min(24rem,32px)}
+  .service-card h3{font-size:min(21rem,28px)}
   .service-card__features li{font-size:min(15rem,20px)}
   .service-card__order{height:min(58rem,72px);font-size:min(16rem,20px)}
   .service-card__actions .social,.service-card__actions .social img{width:min(48rem,60px);height:min(48rem,60px)}
@@ -631,7 +634,9 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 .process__intro{padding:0 50rem}
 .process__intro h2,.process__benefits h2{margin:0;font:600 36rem/1.1 Manrope,"Segoe UI",Arial,sans-serif}
 .process__intro h2{max-width:900rem}
-.process__intro h2 span{display:block;color:var(--bronze)}
+.process__intro h2 .process__heading-accent{display:block;color:var(--bronze)}
+.process__heading-desktop{display:contents}
+.process__heading-mobile{display:none}
 .process__stages{--process-progress:0;position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20rem;margin-top:50rem}
 .process__line{position:absolute;left:var(--line-left,16rem);top:var(--line-top,16rem);width:var(--line-length,0px);height:4rem;transform:translateY(-50%);background:rgb(191 139 77 / 8%);pointer-events:none}
 .process__line-fill{display:block;width:100%;height:100%;background:var(--bronze);transform:scaleX(var(--process-progress));transform-origin:left center}
@@ -703,11 +708,13 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .process{width:383rem;margin-bottom:50rem;padding:0;border-radius:0;background:none;overflow:visible}
   .process__intro{padding:40rem 20rem;border-radius:9rem;background:#fff}
   .process__intro h2{width:100%;max-width:none;font-size:27rem}
-  .process__intro h2 span{display:inline}
+  .process__intro h2 .process__heading-accent{display:inline}
+  .process__heading-desktop{display:none}
+  .process__heading-mobile{display:inline}
   .process__stages{display:flex;flex-direction:column;gap:45rem;margin-top:35rem}
   .process-step{display:grid;grid-template-columns:32rem minmax(0,1fr);gap:20rem}
   .process-step__content{margin-top:0}
-  .process-step h3,.process-benefit h3{font-size:24rem}
+  .process-step h3,.process-benefit h3{font-size:21rem}
   .process-step p,.process-benefit p{margin-top:15rem;font-size:17rem}
   .process-step p{max-width:291rem}
   .process__line{width:4rem;height:var(--line-length,0px);transform:translateX(-50%)}
@@ -722,7 +729,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 
 @media(min-width:480px) and (max-width:639px){
   .process__intro h2,.process__benefits h2{font-size:min(27rem,34px)}
-  .process-step h3,.process-benefit h3{font-size:min(24rem,32px)}
+  .process-step h3,.process-benefit h3{font-size:min(21rem,28px)}
   .process-step p,.process-benefit p{font-size:min(17rem,22px)}
 }
 
