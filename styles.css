@@ -219,23 +219,26 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   main > section[id]{scroll-margin-top:58rem}
   .site-shell{width:393rem;padding-top:10rem}
   .site-header{width:373rem;height:28rem;margin:0 10rem 10rem;display:flex;justify-content:space-between;gap:0}
-  .brand{gap:6rem}.brand__mark{width:47rem;height:23rem}.brand__caption{font-size:12rem;line-height:1.06}
+  .brand{gap:6rem}.brand__mark{width:auto;height:28rem}.brand__caption{font-size:13rem;line-height:1.06}
   .desktop-nav,.header-actions{display:none}
   .menu-toggle{width:44rem;height:44rem;border:0;background:transparent;padding:0;display:grid;place-items:center;flex:none}
-  .menu-toggle img{display:block;width:28rem;height:auto}
-  .hero{width:383rem;height:600rem;margin:0 5rem;border-radius:8rem;background-image:linear-gradient(90deg,rgba(10,9,8,.76),rgba(10,9,8,.6)),url('./assets/01_hero_background.png');background-position:82% center}
-  .hero__content{padding:38rem 20rem 43rem;column-gap:6rem}
+  .menu-toggle img{display:block;width:auto;height:28rem}
+  .hero{width:383rem;height:auto;min-height:600rem;margin:0 5rem;border-radius:8rem;background-image:linear-gradient(90deg,rgba(10,9,8,.76),rgba(10,9,8,.6)),url('./assets/01_hero_background.png');background-position:82% center}
+  .hero__content{position:relative;display:flex;flex-direction:column;min-height:600rem;padding:38rem 20rem 42rem}
   .hero h1,.hero__lead,.hero__benefits{grid-column:1/-1}
   .hero h1{width:343rem;font-size:30rem;line-height:1.1;letter-spacing:-.3rem}
   .desktop-break{display:none}.mobile-break{display:block}
-  .hero__lead{width:340rem;font-size:15rem;line-height:1.2;margin:22rem 0 0}
+  .hero__lead{width:340rem;font-size:17rem;line-height:1.2;margin:22rem 0 0}
   .hero__benefits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16rem;width:343rem;max-width:none;margin-top:30rem}
-  .hero__benefits p{font-size:13rem;line-height:1.15;width:auto;min-width:0;gap:16rem}
+  .hero__benefits p{font-size:15rem;line-height:1.15;width:auto;min-width:0;gap:16rem}
+  .hero__benefits img{width:22rem}
   .hero__benefits p:nth-child(3){display:none}
   .desktop-benefit-break{display:none}
-  .hero__actions{left:20rem;right:20rem;bottom:42rem;display:flex;flex-direction:column;gap:15rem}
+  .hero__actions{position:static;margin-top:25rem;display:flex;flex-direction:column;gap:15rem}
   .button--primary,.button--phone{width:343rem;height:52rem;font-size:15rem;border-radius:8rem}
   .button--phone{font-size:18rem}
+  .hero__actions .button{height:58rem;font-size:16rem}
+  .hero__actions .button--phone{font-size:18rem}
   .mobile-sticky{position:fixed;left:0;right:0;z-index:20;display:block;visibility:hidden;pointer-events:none;transition:transform .23s ease,visibility .23s ease}
   .mobile-sticky.is-visible{visibility:visible;pointer-events:auto;transform:translateY(0)}
   .mobile-sticky--top{top:0;height:48rem;background:#fff;border-bottom:1px solid rgb(31 22 11 / 12%);transform:translateY(-105%)}
@@ -304,15 +307,16 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
    density and places the CTAs side by side before the tablet composition. */
 @media(min-width:480px) and (max-width:639px){
   main > section[id]{scroll-margin-top:calc(min(48rem,60px) + 10px)}
-  .site-header .brand__caption,.mobile-sticky .brand__caption{font-size:clamp(14px,9rem,17px)}
+  .site-header .brand__caption,.mobile-sticky .brand__caption{font-size:min(13rem,17px)}
+  .site-header .brand__mark,.mobile-sticky .brand__mark{height:28px}
   .site-header .menu-toggle,.mobile-sticky .menu-toggle{width:44px;height:44px}
-  .site-header .menu-toggle img,.mobile-sticky .menu-toggle img{width:31px}
-  .hero{max-height:700px}
+  .site-header .menu-toggle img,.mobile-sticky .menu-toggle img{width:auto;height:28px}
+  .hero{max-height:none}
   .hero h1{font-size:26rem}
-  .hero__lead{font-size:13rem}
-  .hero__benefits p{font-size:11rem}
+  .hero__lead{font-size:min(17rem,22px)}
+  .hero__benefits p{font-size:min(15rem,20px)}
   .hero__actions{flex-direction:row;gap:8rem;bottom:22rem}
-  .hero__actions .button{width:calc((100% - 8rem)/2);height:44rem;font-size:12rem}
+  .hero__actions .button{width:calc((100% - 8rem)/2);height:min(58rem,72px);font-size:min(16rem,20px)}
   .hero__actions .button--phone{font-size:12rem;gap:5rem}
   .hero__actions .button--phone img{width:16rem}
   .mobile-sticky--top,.mobile-sticky__header{height:min(48rem,60px)}
