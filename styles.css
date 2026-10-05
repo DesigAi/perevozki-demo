@@ -223,7 +223,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .desktop-nav,.header-actions{display:none}
   .menu-toggle{width:44rem;height:44rem;border:0;background:transparent;padding:0;display:grid;place-items:center;flex:none}
   .menu-toggle img{display:block;width:auto;height:28rem}
-  .hero{width:383rem;height:auto;min-height:600rem;margin:0 5rem;border-radius:8rem;background-image:linear-gradient(90deg,rgba(10,9,8,.76),rgba(10,9,8,.6)),url('./assets/01_hero_background.png');background-position:82% center}
+  .hero{width:383rem;height:auto;min-height:600rem;margin:0 5rem;border-radius:8rem;background-image:linear-gradient(90deg,rgba(10,9,8,.81),rgba(10,9,8,.65)),url('./assets/01_hero_background.png');background-position:82% center}
   .hero__content{position:relative;display:flex;flex-direction:column;min-height:600rem;padding:38rem 20rem 42rem}
   .hero h1,.hero__lead,.hero__benefits{grid-column:1/-1}
   .hero h1{width:343rem;font-size:30rem;line-height:1.1;letter-spacing:-.3rem}
@@ -382,28 +382,29 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 @media(max-width:639px){
   .services{width:373rem;margin:50rem auto 50rem}
   .services__intro{margin-bottom:30rem}
-  .services__intro h2{width:373rem;font-size:26rem;letter-spacing:-.25rem}
+  .services__intro h2{width:373rem;font-size:27rem;letter-spacing:-.25rem}
   .services__desktop-break,.services__decoration{display:none}
-  .services__intro p{width:363rem;margin-top:20rem;font-size:15rem;line-height:1.2}
+  .services__intro p{width:363rem;margin-top:20rem;font-size:17rem;line-height:1.2}
   .services__grid{grid-template-columns:1fr;row-gap:50rem}
   .service-card:nth-child(n+4){display:none}
   .services.is-expanded .service-card:nth-child(n+4){display:flex}
   .service-card__image{height:190rem}
-  .service-card h3{margin-top:20rem;font-size:22rem}
-  .service-card__description{margin-top:15rem;font-size:15rem}
+  .service-card h3{margin-top:20rem;font-size:24rem}
+  .service-card__description{margin-top:15rem;font-size:17rem}
   .service-card__features{margin-top:15rem;gap:10rem}
-  .service-card__features li{padding-top:22rem;font-size:14rem}
+  .service-card__features li{padding-top:24rem;font-size:15rem}
+  .service-card__features li::before{width:16rem;height:16rem}
   .service-card__actions{gap:5rem;margin-top:25rem}
-  .service-card__order{width:187rem;height:52rem;font-size:15rem}
-  .services__more{display:block;width:160rem;height:36rem;margin:40rem auto 0;padding:0;border:1rem solid var(--bronze);border-radius:7rem;background:transparent;color:var(--bronze);font-size:14rem;font-weight:500}
+  .service-card__order{width:187rem;height:58rem;font-size:16rem}
+  .services__more{display:block;width:160rem;height:44rem;margin:40rem auto 0;padding:0;border:1rem solid var(--bronze);border-radius:7rem;background:transparent;color:var(--bronze);font-size:15rem;font-weight:500}
 }
 
 @media(min-width:480px) and (max-width:639px){
-  .services__intro h2{font-size:min(26rem,34px)}
-  .services__intro p,.service-card__description{font-size:min(15rem,18px)}
-  .service-card h3{font-size:min(22rem,29px)}
-  .service-card__features li{font-size:min(14rem,17px)}
-  .service-card__order{height:min(52rem,60px);font-size:min(15rem,18px)}
+  .services__intro h2{font-size:min(27rem,34px)}
+  .services__intro p,.service-card__description{font-size:min(17rem,22px)}
+  .service-card h3{font-size:min(24rem,32px)}
+  .service-card__features li{font-size:min(15rem,20px)}
+  .service-card__order{height:min(58rem,72px);font-size:min(16rem,20px)}
   .service-card__actions .social,.service-card__actions .social img{width:min(48rem,60px);height:min(48rem,60px)}
 }
 
@@ -455,7 +456,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 @media(max-width:639px){
   .tariffs{display:block;width:383rem;min-height:0;margin-bottom:50rem;padding:0;border-radius:0;background:none}
   .tariffs__main{min-height:0;padding:40rem 20rem;border-radius:9rem;background:linear-gradient(90deg,rgba(15,12,10,.75),rgba(15,12,10,.63)),var(--lazy-photo,url('./assets/06_gallery_01_rear-loading.png')) 52% center/cover}
-  .tariffs__main h2{max-width:300rem;margin-bottom:30rem;font-size:26rem;line-height:1.1}
+  .tariffs__main h2{max-width:300rem;margin-bottom:30rem;font-size:27rem;line-height:1.1}
   .tariffs__mobile-break{display:block}
   .tariffs__table{display:block;width:343rem;border-radius:8rem}
   .tariffs__table colgroup{display:none}
@@ -464,25 +465,26 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .tariffs__table tbody tr{display:grid;grid-template-columns:minmax(0,1fr) max-content;grid-template-areas:"format price" "details price";gap:8rem 10rem;height:auto;padding:18rem 14rem;border-bottom:1rem solid #e8e8e8}
   .tariffs__table tbody tr:last-child{border-bottom:0}
   .tariffs__table tbody th,.tariffs__table tbody td{display:block;padding:0;border:0;vertical-align:top}
-  .tariffs__table tbody th{grid-area:format;font-size:14rem;line-height:1.2}
-  .tariffs__table tbody td:nth-child(2){grid-area:details;font-size:13rem;line-height:1.2;color:var(--ink-70)}
-  .tariffs__table tbody td:last-child{grid-area:price;align-self:center;font-size:13rem;line-height:1.2}
-  .tariffs__cta{height:330rem;margin-top:5rem;padding:20rem 19rem;border-radius:9rem;background-position:76% center}
-  .tariffs__cta h3{font-size:22rem}
-  .tariffs__calculate{width:343rem;height:52rem;font-size:15rem}
+  .tariffs__table tbody th{grid-area:format;font-size:16rem;line-height:1.2}
+  .tariffs__table tbody td:nth-child(2){grid-area:details;font-size:15rem;line-height:1.2;color:var(--ink-70)}
+  .tariffs__table tbody td:last-child{grid-area:price;align-self:center;font-size:16rem;line-height:1.2}
+  .tariffs__cta{height:auto;margin-top:5rem;padding:20rem 19rem;border-radius:9rem;background-position:76% center}
+  .tariffs__cta h3{font-size:24rem}
+  /* Preserve the former 330rem card's free space above its CTA as content grows. */
+  .tariffs__calculate{width:343rem;height:58rem;margin-top:calc(93.4rem - 2px);font-size:16rem}
   .tariffs__contacts{display:flex;align-items:center;gap:5rem;width:343rem;margin-top:20rem}
-  .tariffs__call{width:184rem;height:52rem;display:inline-flex;align-items:center;justify-content:center;gap:6rem;border:1rem solid rgba(255,255,255,.8);border-radius:7rem;background:rgba(20,16,12,.2);font-size:15rem;font-weight:500;white-space:nowrap;flex:none}
+  .tariffs__call{width:184rem;height:58rem;display:inline-flex;align-items:center;justify-content:center;gap:6rem;border:1rem solid rgba(255,255,255,.8);border-radius:7rem;background:rgba(20,16,12,.2);font-size:16rem;font-weight:500;white-space:nowrap;flex:none}
   .tariffs__call img{width:18rem;height:18rem}
   .tariffs__contacts .social,.tariffs__contacts .social img{width:48rem;height:48rem}
 }
 
 @media(min-width:480px) and (max-width:639px){
-  .tariffs__main h2{font-size:min(26rem,34px)}
-  .tariffs__table tbody th{font-size:min(14rem,17px)}
-  .tariffs__table tbody td:nth-child(2),.tariffs__table tbody td:last-child{font-size:min(13rem,16px)}
-  .tariffs__cta h3{font-size:min(22rem,29px)}
-  .tariffs__calculate{font-size:min(15rem,18px)}
-  .tariffs__call{font-size:min(15rem,16px)}
+  .tariffs__main h2{font-size:min(27rem,34px)}
+  .tariffs__table tbody th,.tariffs__table tbody td:last-child{font-size:min(16rem,20px)}
+  .tariffs__table tbody td:nth-child(2){font-size:min(15rem,20px)}
+  .tariffs__cta h3{font-size:min(24rem,32px)}
+  .tariffs__calculate{height:min(58rem,72px);margin-top:calc(166rem - 2px - min(72.6rem,95.7px));font-size:min(16rem,20px)}
+  .tariffs__call{height:min(58rem,72px);font-size:min(16rem,20px)}
 }
 
 .reviews{width:1280rem;margin:0 auto 100rem}
