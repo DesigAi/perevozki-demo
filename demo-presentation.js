@@ -2,6 +2,13 @@
 (() => {
   const section = document.querySelector('.demo-presentation');
   if (!section) return;
+  // Keep keyboard focus visible without leaving rings after a tap/click.
+  const root = document.documentElement;
+  root.dataset.demoInput = 'keyboard';
+  document.addEventListener('pointerdown', () => { root.dataset.demoInput = 'pointer'; }, true);
+  document.addEventListener('keydown', event => {
+    if (!['Shift', 'Control', 'Alt', 'Meta'].includes(event.key)) root.dataset.demoInput = 'keyboard';
+  }, true);
   const dialogs = [...document.querySelectorAll('.demo-detail')];
   let opener = null;
   section.querySelectorAll('[data-demo-detail]').forEach(button => {
