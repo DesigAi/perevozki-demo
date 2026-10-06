@@ -119,6 +119,7 @@
   .demo-detail__body{padding:20rem;font-size:17rem;line-height:1.2}
   .demo-detail__body h3{font-size:21rem;margin-top:26rem}
   .demo-contacts__grid{grid-template-columns:minmax(0,1fr);gap:26rem}
+  .demo-contacts__channel + .demo-contacts__channel{border-top:1rem solid rgb(31 22 11 / 12%);padding-top:26rem}
   .demo-contacts__channel h3{margin:0}
   .demo-contacts__link{margin-top:0}
   .demo-contacts__qr{width:180rem;height:auto}
