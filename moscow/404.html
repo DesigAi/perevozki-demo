@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru" data-city="moscow">
+<head>
+  <meta charset="utf-8">
+  <base href="/moscow/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F4F4F4">
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="description" content="Демо: Запрашиваемая страница не найдена. Вернитесь на главную страницу сайта городских перевозок.">
+  <meta name="robots" content="noindex,follow">
+  <title>Демо: Страница не найдена</title>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Демо: Страница не найдена">
+  <meta property="og:description" content="Демо: Запрашиваемая страница не найдена. Вернитесь на главную страницу сайта городских перевозок.">
+  <meta property="og:image" content="https://perevozki-demo.vercel.app/moscow/badge.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+  <meta property="og:image:alt" content="Логотип и название: Грузовое такси и переезды по Москве и области">
+  <script>document.documentElement.classList.add('js');window.addEventListener('load',()=>{if(!window.lazyPhotosReady)document.documentElement.classList.remove('js')})</script>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../cookie-consent.css">
+  <link rel="stylesheet" href="../404.css">
+  <script src="./legal.js" defer></script>
+  <script src="../mobile-contact-spacing.js" defer></script>
+  <script src="../cookie-consent.js" defer></script>
+  <link rel="stylesheet" href="../city-variants.css">
+</head>
+<body class="not-found-page">
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="brand" href="./index.html#top" aria-label="На начало страницы">
+        <img class="brand__mark" src="../assets/00_brand_logo.svg" width="80" height="38" alt="">
+        <span class="brand__caption">Грузовое такси и&nbsp;переезды<br>по&nbsp;Москве и&nbsp;области</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="./index.html#services">Услуги</a>
+        <a href="./index.html#tariffs">Тарифы</a>
+        <a href="./index.html#reviews">Отзывы</a>
+        <a href="./index.html#process">Как работаем</a>
+        <a href="./index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-contact">
+          <div class="availability"><span class="availability__dot" aria-hidden="true"></span><span>Без&nbsp;перерывов и&nbsp;выходных 08:00–21:00</span></div>
+          <button class="header-phone demo-phone" type="button" data-demo-contact="телефон">+7&nbsp;(905)&nbsp;555-66-77</button>
+        </div>
+        <div class="socials" aria-label="Мессенджеры">
+          <button class="social" type="button" data-demo-contact="Telegram" aria-label="Связаться через Telegram"><img src="../assets/telegram.svg" width="38" height="38" alt=""></button>
+          <button class="social" type="button" data-demo-contact="MAX" aria-label="Связаться через MAX"><img src="../assets/max.svg" width="38" height="38" alt=""></button>
+        </div>
+        <button class="button button--header" type="button" data-open-dialog>Заказать перевозку</button>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false"><img src="../assets/menu burger.svg" width="28" height="22" alt=""></button>
+    </header>
+
+    <main>
+      <section class="not-found" aria-labelledby="not-found-title">
+        <p class="not-found__code" aria-hidden="true">404</p>
+        <h1 id="not-found-title">Страница не найдена</h1>
+        <a class="button button--primary not-found__back" href="./index.html">Вернуться на главную</a>
+      </section>
+
+      <section class="quick-quote" id="quick-quote" aria-labelledby="quick-quote-title">
+        <div class="quick-quote__form-panel" data-lazy-photo="../assets/box.svg">
+          <h2 id="quick-quote-title"><span>Получите расчёт стоимости перевозки</span> и&nbsp;узнайте итоговую цену до&nbsp;выезда машины</h2>
+          <form class="quick-quote__form" data-quote-form novalidate>
+            <label class="field field--cargo">Что нужно перевезти<textarea name="cargo" rows="2" placeholder="Например: диван, стройматериалы…"></textarea></label>
+            <label class="field">Адрес точки А<input name="from" autocomplete="street-address" placeholder="Откуда забрать груз" required></label>
+            <label class="field">Адрес точки Б<input name="to" autocomplete="off" placeholder="Куда доставить груз" required></label>
+            <label class="field">Ваше имя<input name="name" autocomplete="name" placeholder="Имя"></label>
+            <label class="field">Телефон<span class="phone-field"><img src="../assets/russia-flag.svg" alt="" width="20" height="14"><span class="phone-field__code">+7</span><input name="phone" type="tel" autocomplete="tel-national" inputmode="numeric" placeholder="(905) 555-66-77" aria-label="Номер телефона России после кода +7" required></span></label>
+            <label class="consent"><input type="checkbox" name="consent" required><span>Я даю <a href="./consent.html" target="_blank" rel="noopener noreferrer">согласие на&nbsp;обработку моих персональных данных</a> и&nbsp;подтверждаю, что ознакомлен(-а) с&nbsp;<a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Политикой в&nbsp;отношении обработки персональных данных</a>.</span></label>
+            <p class="form-note" role="status"></p>
+            <button class="button button--primary quick-quote__submit" type="submit">Рассчитать перевозку</button>
+          </form>
+        </div>
+        <div class="quick-quote__photo-panel" data-lazy-photo="../assets/04_quick-quote_background.png">
+          <div class="quick-quote__photo-content">
+            <h2>Нужна срочная перевозка?</h2>
+            <p>Позвоните нам или напишите в&nbsp;удобном мессенджере. Быстро обсудим формат работы.</p>
+            <div class="quick-quote__contacts" aria-label="Быстрая связь">
+              <button class="quick-quote__call demo-phone" type="button" data-demo-contact="телефон"><img src="../assets/phone icon white.svg" width="20" height="20" alt="">+7&nbsp;(905)&nbsp;555-66-77</button>
+              <button class="social" type="button" data-demo-contact="Telegram" aria-label="Связаться через Telegram"><img src="../assets/telegram.svg" width="48" height="48" alt=""></button>
+              <button class="social" type="button" data-demo-contact="MAX" aria-label="Связаться через MAX"><img src="../assets/max.svg" width="48" height="48" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__panel">
+        <div class="site-footer__brand">
+          <a class="site-footer__brand-link" href="./index.html#top" aria-label="На начало страницы">
+            <img src="../assets/00_brand_logo.svg" width="80" height="38" alt="">
+            <span>Грузовое такси и&nbsp;переезды<br>по&nbsp;Москве и&nbsp;области</span>
+          </a>
+          <div class="site-footer__reach">
+            <div class="site-footer__socials" aria-label="Мессенджеры">
+              <button class="social" type="button" data-demo-contact="Telegram" aria-label="Связаться через Telegram"><img src="../assets/telegram.svg" width="38" height="38" alt=""></button>
+              <button class="social" type="button" data-demo-contact="MAX" aria-label="Связаться через MAX"><img src="../assets/max.svg" width="38" height="38" alt=""></button>
+            </div>
+            <p class="site-footer__brand-note">Приём заявок: ежедневно,<br>срочный выезд по&nbsp;согласованию.</p>
+          </div>
+        </div>
+        <nav class="site-footer__column site-footer__services" aria-label="Услуги в футере">
+          <h3>Услуги</h3>
+          <a href="./index.html#services">Грузовое такси по&nbsp;Москве</a>
+          <a href="./index.html#services">Квартирный переезд</a>
+          <a href="./index.html#services">Офисный переезд</a>
+          <a href="./index.html#services">Перевозка мебели</a>
+          <a href="./index.html#services">Перевозка стройматериалов</a>
+          <a href="./index.html#services">Грузчики и&nbsp;упаковка</a>
+        </nav>
+        <nav class="site-footer__column site-footer__navigation" aria-label="Навигация в футере">
+          <h3>Навигация</h3>
+          <a href="./index.html#services">Услуги</a>
+          <a href="./index.html#tariffs">Тарифы</a>
+          <a href="./index.html#reviews">Отзывы</a>
+          <a href="./index.html#process">Как работаем</a>
+          <a href="./index.html#gallery">Фото с&nbsp;выездов</a>
+          <a href="./index.html#faq">Ответы на&nbsp;вопросы</a>
+          <a href="./index.html#contacts">Контакты</a>
+        </nav>
+        <div class="site-footer__column site-footer__contacts">
+          <h3>Контакты</h3>
+          <button class="site-footer__phone demo-phone" type="button" data-demo-contact="телефон">+7&nbsp;(905)&nbsp;555-66-77</button>
+          <button type="button" data-demo-contact="почту">post@mail.com</button>
+          <div class="site-footer__location">
+            <div class="site-footer__maps">
+              <button type="button" data-demo-contact="Google Карты">Google Карты</button>
+              <button type="button" data-demo-contact="Яндекс Карты">Яндекс Карты</button>
+            </div>
+            <p class="site-footer__address">г.&nbsp;Москва, ул.&nbsp;Ленина&nbsp;56, оф.&nbsp;45</p>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__legal">
+        <small>© 2026 Грузоперевозки по&nbsp;Москве. Все права защищены.</small>
+        <nav class="site-footer__legal-links" aria-label="Правовые документы и настройки cookie">
+          <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
+          <a href="./consent.html" target="_blank" rel="noopener noreferrer">Согласие на&nbsp;обработку данных</a>
+          <a href="./cookie-policy.html" target="_blank" rel="noopener noreferrer">Политика файлов cookie</a>
+          <button type="button" data-cookie-settings>Настройки cookie</button>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <div class="mobile-sticky mobile-sticky--top" aria-hidden="true">
+    <div class="mobile-sticky__header"><span class="sticky-brand"><img class="brand__mark" src="../assets/00_brand_logo.svg" alt=""><span class="brand__caption">Грузовое такси и&nbsp;переезды<br>по&nbsp;Москве и&nbsp;области</span></span><button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false"><img src="../assets/menu burger.svg" width="28" height="22" alt=""></button></div>
+  </div>
+  <div class="mobile-sticky mobile-sticky--bottom" aria-hidden="true">
+    <div class="mobile-sticky__contacts">
+      <button class="sticky-call demo-phone" type="button" data-demo-contact="телефон"><img src="../assets/phone-icon-bronze.svg" width="20" height="20" alt="">+7&nbsp;(905)&nbsp;555-66-77</button>
+      <button class="social" type="button" data-demo-contact="Telegram" aria-label="Telegram"><img src="../assets/telegram.svg" width="38" height="38" alt=""></button>
+      <button class="social" type="button" data-demo-contact="MAX" aria-label="MAX"><img src="../assets/max.svg" width="38" height="38" alt=""></button>
+    </div>
+  </div>
+
+  <div class="drawer-backdrop" hidden></div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Боковая навигация" aria-hidden="true">
+    <div class="tablet-menu__brand"><img src="../assets/00_brand_logo.svg" width="80" height="38" alt="Грузовое такси и переезды по Москве и области"></div>
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню"><img src="../assets/close icon.svg" width="32" height="32" alt=""></button>
+    <a href="./index.html#services">Услуги</a><a href="./index.html#tariffs">Тарифы</a><a href="./index.html#reviews">Отзывы</a><a href="./index.html#process">Как работаем</a><a href="./index.html#contacts">Контакты</a>
+    <div class="tablet-menu__contacts" aria-label="Контакты">
+      <button class="tablet-menu__phone demo-phone" type="button" data-demo-contact="телефон">+7&nbsp;(905)&nbsp;555-66-77</button>
+      <div class="tablet-menu__hours"><span class="availability__dot" aria-hidden="true"></span><span>Без&nbsp;перерывов и&nbsp;выходных 08:00–21:00</span></div>
+      <div class="tablet-menu__socials" aria-label="Мессенджеры">
+        <button class="social" type="button" data-demo-contact="Telegram" aria-label="Связаться через Telegram"><img src="../assets/telegram.svg" width="38" height="38" alt=""></button>
+        <button class="social" type="button" data-demo-contact="MAX" aria-label="Связаться через MAX"><img src="../assets/max.svg" width="38" height="38" alt=""></button>
+      </div>
+    </div>
+    <button class="button button--primary" type="button" data-open-dialog>Рассчитать перевозку</button>
+  </nav>
+
+  <div class="dialog-overlay" id="quote-overlay" hidden>
+    <div class="quote-dialog" role="dialog" aria-modal="true" aria-labelledby="quote-title">
+      <div class="quote-dialog__form-area">
+        <button class="quote-dialog__close" type="button" aria-label="Закрыть форму"><img src="../assets/close icon.svg" width="32" height="32" alt=""></button>
+        <h2 id="quote-title"><span data-quote-title-accent>Получите расчёт стоимости перевозки</span> <span data-quote-title-tail>и&nbsp;узнайте итоговую цену до&nbsp;выезда машины</span></h2>
+        <form id="quote-form" data-quote-form novalidate>
+          <input type="hidden" name="service" value="">
+          <label class="field field--cargo">Что нужно перевезти<textarea name="cargo" rows="2" placeholder="Например: диван, стройматериалы…"></textarea></label>
+          <label class="field">Адрес точки А<input name="from" autocomplete="street-address" placeholder="Откуда забрать груз" required></label>
+          <label class="field">Адрес точки Б<input name="to" autocomplete="off" placeholder="Куда доставить груз" required></label>
+          <label class="field">Ваше имя<input name="name" autocomplete="name" placeholder="Имя"></label>
+          <label class="field">Телефон<span class="phone-field"><img src="../assets/russia-flag.svg" alt="" width="20" height="14"><span class="phone-field__code">+7</span><input name="phone" type="tel" autocomplete="tel-national" inputmode="numeric" placeholder="(905) 555-66-77" aria-label="Номер телефона России после кода +7" required></span></label>
+          <label class="consent"><input type="checkbox" name="consent" required><span>Я даю <a href="./consent.html" target="_blank" rel="noopener noreferrer">согласие на&nbsp;обработку моих персональных данных</a> и&nbsp;подтверждаю, что ознакомлен(-а) с&nbsp;<a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Политикой в&nbsp;отношении обработки персональных данных</a>.</span></label>
+          <p class="form-note" id="form-note" role="status"></p>
+          <button class="button button--primary quote-dialog__submit" type="submit">Рассчитать перевозку</button>
+        </form>
+      </div>
+      <div class="quote-dialog__image" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="demo-toast" role="status" aria-live="polite"></div>
+</body>
+</html>
