@@ -107,12 +107,12 @@
   .demo-detail__header{padding:20rem;gap:12rem}
   .demo-detail__title{font-size:27rem}
   .demo-detail__body{padding:20rem;font-size:17rem;line-height:1.2}
-  .demo-detail__body h3{font-size:24rem;margin-top:26rem}
+  .demo-detail__body h3{font-size:21rem;margin-top:26rem}
 }
 @media(min-width:480px) and (max-width:639px){
   .demo-presentation__title{font-size:min(27rem,34px)}
   .demo-benefit__title{font-size:min(21rem,28px)}
-  .demo-detail__body h3{font-size:min(24rem,32px)}
+  .demo-detail__body h3{font-size:min(21rem,28px)}
   .demo-presentation__name{font-size:min(17rem,22px)}
   .demo-presentation__experience{font-size:min(13rem,16px)}
   .demo-benefit__description,.demo-detail__body{font-size:min(17rem,22px)}
