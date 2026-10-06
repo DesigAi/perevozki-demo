@@ -21,11 +21,45 @@
   <script>document.documentElement.classList.add('js');window.addEventListener('load',()=>{if(!window.lazyPhotosReady)document.documentElement.classList.remove('js')})</script>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./cookie-consent.css">
+  <link rel="stylesheet" href="./demo-presentation.css">
   <script src="./script.js" defer></script>
   <script src="./mobile-contact-spacing.js" defer></script>
   <script src="./cookie-consent.js" defer></script>
+  <script src="./demo-presentation.js" defer></script>
 </head>
 <body>
+
+  <section class="demo-presentation" aria-labelledby="demo-presentation-title">
+    <div class="demo-presentation__hero">
+      <h2 class="demo-presentation__title" id="demo-presentation-title">Готовый сайт для&nbsp;<span>городского грузоперевозчика</span></h2>
+      <ul class="demo-presentation__topics"><li>Грузовое такси</li><li>Перевозка мебели</li><li>Квартирные и&nbsp;офисные переезды</li></ul>
+      <div class="demo-presentation__author">
+        <img class="demo-presentation__photo" src="./assets/author-photo.png" width="120" height="120" alt="Илья Косик">
+        <div><strong class="demo-presentation__name">Илья Косик</strong><p class="demo-presentation__experience">Разработка и&nbsp;маркетинг сайтов для&nbsp;бизнеса. 6&nbsp;лет практического опыта.</p><p class="demo-presentation__experience">Есть опыт работы с&nbsp;транспортными компаниями.</p></div>
+      </div>
+      <div class="demo-presentation__actions">
+        <a class="demo-presentation__button" href="#top">Посмотреть сайт</a>
+        <a class="demo-presentation__button demo-presentation__button--secondary" href="#about-demo">Подробнее о&nbsp;сайте</a>
+      </div>
+    </div>
+    <div class="demo-presentation__benefits" id="about-demo">
+      <h2 class="demo-presentation__sr-only" id="demo-benefits-title">Преимущества готового сайта</h2>
+      <div class="demo-presentation__track" role="region" aria-labelledby="demo-benefits-title" tabindex="0">
+        <article class="demo-benefit"><h3 class="demo-benefit__title">Адаптируется под&nbsp;вашу компанию</h3><p class="demo-benefit__description">Готовая структура адаптируется под&nbsp;вашу компанию. Сайт показывает ваши услуги и&nbsp;сильные стороны, чтобы клиент понимал, что вы можете ему предложить.</p><button class="demo-presentation__button demo-benefit__button" type="button" data-demo-detail="demo-detail-1" aria-haspopup="dialog" aria-controls="demo-detail-1">Смотреть, что входит</button></article>
+<article class="demo-benefit"><h3 class="demo-benefit__title">Помогает клиенту выбрать перевозчика</h3><p class="demo-benefit__description">Сайт помогает показать, почему вам можно доверить перевозку. Его структура отвечает на&nbsp;важные вопросы клиента и&nbsp;подводит к&nbsp;обращению.</p><button class="demo-presentation__button demo-benefit__button" type="button" data-demo-detail="demo-detail-2" aria-haspopup="dialog" aria-controls="demo-detail-2">Узнать про подход</button></article>
+<article class="demo-benefit"><h3 class="demo-benefit__title">Развивается вместе с&nbsp;вашим бизнесом</h3><p class="demo-benefit__description">Можно начать с&nbsp;готового сайта и&nbsp;запускать на&nbsp;него рекламу. Когда бизнесу потребуется больше возможностей, сайт дополняется под&nbsp;новые задачи.</p><button class="demo-presentation__button demo-benefit__button" type="button" data-demo-detail="demo-detail-3" aria-haspopup="dialog" aria-controls="demo-detail-3">Посмотреть варианты развития</button></article>
+      </div>
+      <div class="demo-presentation__carousel-controls">
+        <span class="demo-presentation__progress" data-demo-progress aria-live="polite">1 из&nbsp;3</span>
+        <div class="demo-presentation__arrows">
+          <button class="demo-presentation__arrow" type="button" data-demo-previous aria-label="Предыдущая карточка"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m5-5-5 5 5 5"/></svg></button>
+          <button class="demo-presentation__arrow" type="button" data-demo-next aria-label="Следующая карточка"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <p class="demo-presentation__end">Демо сайта перевозчика</p>
+  </section>
+
   <div class="site-shell">
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="На начало страницы">
@@ -409,5 +443,65 @@
   </dialog>
 
   <div class="demo-toast" role="status" aria-live="polite"></div>
+
+  <dialog class="demo-detail" id="demo-detail-1" aria-labelledby="demo-detail-title-1">
+    <div class="demo-detail__header"><h2 class="demo-detail__title" id="demo-detail-title-1">Адаптация сайта под&nbsp;вашу компанию</h2><button class="demo-detail__close" type="button" aria-label="Закрыть подробное описание" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="demo-detail__body" tabindex="0"><p>Человек открывает сайт и&nbsp;знакомится с&nbsp;вашей работой. Он видит, какие задачи вы решаете и&nbsp;на&nbsp;каких условиях можно заказать перевозку.</p>
+<p>Готовая основа уже есть. При адаптации её содержание меняется под&nbsp;вашу компанию.</p>
+<h3>Ваше оформление</h3>
+<p>На&nbsp;сайте размещается ваш логотип. Цвета подбираются под&nbsp;фирменный стиль или ваши пожелания.</p>
+<p>Фотографии помогают показать компанию и&nbsp;её работу. Если подходящих снимков нет, возможно создание реалистичных изображений на&nbsp;основе фотографий вас или вашей машины. Такая работа оценивается отдельно.</p>
+<h3>Ваши услуги и&nbsp;условия</h3>
+<p>На&nbsp;сайте остаются услуги, которые вы действительно оказываете. Количество карточек меняется под&nbsp;ваш бизнес.</p>
+<p>Тарифы показывают ваш порядок расчёта. Контакты ведут к&nbsp;вашей компании.</p>
+<p>Тексты объясняют, что получает клиент при обращении к&nbsp;вам. Например, как организована погрузка или что входит в&nbsp;перевозку. За&nbsp;основу берутся реальные условия вашей работы.</p>
+<h3>Готовая структура</h3>
+<p>Сохраняются порядок и&nbsp;задачи блоков. Их содержание подбирается так, чтобы сайт рассказывал о&nbsp;вашей компании ясно и&nbsp;последовательно.</p>
+<p>Вам не&nbsp;нужно самостоятельно придумывать каждый экран и&nbsp;писать все тексты с&nbsp;чистого листа. Продуманная основа уже подготовлена.</p>
+<h3>Служебные страницы</h3>
+<p>Страницы благодарности и&nbsp;ошибки уже предусмотрены. Правовые страницы также адаптируются под&nbsp;данные компании.</p>
+<p>В&nbsp;результате вы получаете сайт под&nbsp;свой бизнес в&nbsp;рамках готовой структуры. Новые блоки и&nbsp;функции обсуждаются отдельно.</p></div>
+  </dialog>
+
+  <dialog class="demo-detail" id="demo-detail-2" aria-labelledby="demo-detail-title-2">
+    <div class="demo-detail__header"><h2 class="demo-detail__title" id="demo-detail-title-2">Как сайт помогает выбрать вашу компанию</h2><button class="demo-detail__close" type="button" aria-label="Закрыть подробное описание" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="demo-detail__body" tabindex="0"><p>Человек, который впервые нашёл вашу компанию, ещё не&nbsp;знает, как вы работаете. Ему важно понять, подходите ли вы для&nbsp;его задачи и&nbsp;можно ли доверить вам вещи.</p>
+<p>Сайт помогает познакомиться с&nbsp;вами до&nbsp;первого разговора. Он раскрывает условия работы и&nbsp;показывает, на&nbsp;чём основано доверие к&nbsp;компании.</p>
+<h3>В&nbsp;основе лежат реальные вопросы клиентов</h3>
+<p>При создании структуры изучались работа перевозчиков и&nbsp;опыт людей, которые заказывали перевозку.</p>
+<p>Что вызывает сомнения перед заказом? Какие условия помогают чувствовать себя спокойнее? Что люди ценят после выполненной работы?</p>
+<p>Из&nbsp;этих вопросов складываются задачи блоков. При адаптации ответы наполняются фактами вашей компании.</p>
+<h3>Главный экран помогает сразу понять предложение</h3>
+<p>Посетитель видит, какие перевозки доступны и&nbsp;где работает компания. Если предложение подходит, он может сразу обратиться.</p>
+<h3>Услуги помогают найти свою задачу</h3>
+<p>Человек узнаёт знакомую ситуацию: переезд квартиры или перевозку купленной мебели. Описание показывает, чем компания может помочь и&nbsp;что входит в&nbsp;работу.</p>
+<p>Так посетителю легче понять, что его задачу здесь смогут решить.</p>
+<h3>Тарифы объясняют стоимость</h3>
+<p>Сайт показывает, как рассчитывается цена и&nbsp;какие условия на&nbsp;неё влияют. Человек получает ориентир перед разговором и&nbsp;может запросить расчёт своей перевозки.</p>
+<h3>Отзывы дают основания доверять</h3>
+<p>Реальные отзывы показывают опыт других клиентов. Они помогают понять, как компания выполняет свои обещания на&nbsp;практике.</p>
+<h3>Форма помогает перейти к&nbsp;обсуждению</h3>
+<p>Посетитель может описать, что нужно перевезти, и&nbsp;оставить контакты. Перевозчик получает исходные сведения, с&nbsp;которых можно начать разговор о&nbsp;заказе.</p>
+<h3>Этапы и&nbsp;преимущества раскрывают ценность работы</h3>
+<p>Здесь объясняется, как проходит перевозка и&nbsp;что компания берёт на&nbsp;себя. Клиент видит, какую помощь он получает и&nbsp;как будет организован его заказ.</p>
+<h3>Фотографии знакомят с&nbsp;исполнителями</h3>
+<p>Реальные снимки показывают технику и&nbsp;выполненные работы. Они помогают составить представление о&nbsp;компании до&nbsp;знакомства по&nbsp;телефону.</p>
+<h3>Частые вопросы снимают оставшиеся сомнения</h3>
+<p>Посетитель находит важные детали, которые могли удерживать его от&nbsp;обращения. Ответы помогают спокойнее перейти к&nbsp;обсуждению задачи.</p>
+<h3>Финальный блок предлагает связаться</h3>
+<p>После знакомства с&nbsp;компанией человек снова видит удобные способы обращения. Можно обсудить перевозку и&nbsp;уточнить условия своего заказа.</p>
+<p>У&nbsp;каждого блока есть задача. Вместе они помогают показать, что именно получает клиент, выбирая вашу компанию.</p></div>
+  </dialog>
+
+  <dialog class="demo-detail" id="demo-detail-3" aria-labelledby="demo-detail-title-3">
+    <div class="demo-detail__header"><h2 class="demo-detail__title" id="demo-detail-title-3">Сайт для&nbsp;текущих задач и&nbsp;дальнейшего роста</h2><button class="demo-detail__close" type="button" aria-label="Закрыть подробное описание" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="demo-detail__body" tabindex="0"><p>После адаптации сайт можно использовать для&nbsp;знакомства клиентов с&nbsp;вашей компанией. На&nbsp;него можно вести людей из&nbsp;рекламы или отправлять ссылку тем, кто хочет узнать о&nbsp;ваших услугах.</p>
+<p>У&nbsp;человека будет место, где можно изучить предложение и&nbsp;связаться с&nbsp;вами.</p>
+<p>Если позже бизнесу потребуется больше возможностей, сайт можно доработать. Расширения подбираются под&nbsp;то, что нужно решить:</p>
+<ul><li><strong>Дополнительные блоки.</strong> Чтобы раскрыть важные особенности вашей работы.</li><li><strong>Калькуляторы.</strong> Чтобы посетитель мог предварительно оценить стоимость по&nbsp;заданным условиям.</li><li><strong>Отдельные страницы услуг.</strong> Чтобы подробнее показать каждое направление.</li><li><strong>Блог.</strong> Чтобы публиковать полезные материалы и&nbsp;отвечать на&nbsp;вопросы клиентов.</li><li><strong>Проработка для&nbsp;поиска.</strong> Чтобы развивать сайт под&nbsp;запросы людей, которым нужны ваши услуги.</li><li><strong>Новые модули и&nbsp;функции.</strong> Чтобы сайт помогал решать следующие задачи бизнеса.</li></ul>
+<p>Каждая доработка обсуждается отдельно. До&nbsp;начала работ согласуются её состав и&nbsp;стоимость.</p>
+<p>Если потребуется полностью индивидуальный сайт, возможен отдельный проект. Начать можно с&nbsp;готового решения, а&nbsp;дальнейшее развитие выбирать по&nbsp;потребностям компании.</p></div>
+  </dialog>
+
 </body>
 </html>
