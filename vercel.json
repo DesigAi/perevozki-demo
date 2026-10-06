@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "node build-city-pages.mjs",
+  "outputDirectory": ".",
   "routes": [
     { "src": "/(.*)", "headers": { "X-Robots-Tag": "noindex" }, "continue": true },
     { "src": "/moscow", "headers": { "Location": "/moscow/" }, "status": 308 },
