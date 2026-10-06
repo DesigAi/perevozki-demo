@@ -35,10 +35,10 @@
       <ul class="demo-presentation__topics"><li>Грузовое такси</li><li>Перевозка мебели</li><li>Квартирные и&nbsp;офисные переезды</li></ul>
       <div class="demo-presentation__author">
         <img class="demo-presentation__photo" src="./assets/author-photo.png" width="120" height="120" alt="Илья Косик">
-        <div><strong class="demo-presentation__name">Илья Косик</strong><p class="demo-presentation__experience">Разработка и&nbsp;маркетинг сайтов для&nbsp;бизнеса. 6&nbsp;лет практического опыта.</p><p class="demo-presentation__experience">Есть опыт работы с&nbsp;транспортными компаниями.</p></div>
+        <div><strong class="demo-presentation__name">Илья Косик</strong><p class="demo-presentation__experience">Разработка и&nbsp;маркетинг сайтов для&nbsp;бизнеса. 6&nbsp;лет практического опыта.</p><p class="demo-presentation__experience">Есть опыт работы с&nbsp;транспортными компаниями.</p><button class="demo-presentation__button demo-presentation__button--secondary demo-presentation__button--contact" type="button" data-demo-detail="demo-contacts" aria-haspopup="dialog" aria-controls="demo-contacts">Связаться со&nbsp;мной</button></div>
       </div>
       <div class="demo-presentation__actions">
-        <a class="demo-presentation__button" href="#top">Посмотреть сайт</a>
+        <a class="demo-presentation__button" href="#demo-site">Посмотреть сайт</a>
         <a class="demo-presentation__button demo-presentation__button--secondary" href="#about-demo">Узнать возможности сайта</a>
       </div>
     </div>
@@ -60,7 +60,7 @@
   </section>
   <p class="demo-presentation__end">Демо сайта перевозчика</p>
 
-  <div class="site-shell">
+  <div class="site-shell" id="demo-site">
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="На начало страницы">
         <img class="brand__mark" src="./assets/00_brand_logo.svg" width="80" height="38" alt="">
@@ -503,5 +503,30 @@
 <p>Если потребуется полностью индивидуальный сайт, возможен отдельный проект. Начать можно с&nbsp;готового решения, а&nbsp;дальнейшее развитие выбирать по&nbsp;потребностям компании.</p></div>
   </dialog>
 
+  <dialog class="demo-detail demo-contacts" id="demo-contacts" aria-labelledby="demo-contacts-title">
+    <div class="demo-detail__header"><h2 class="demo-detail__title" id="demo-contacts-title">Свяжитесь со&nbsp;мной удобным для&nbsp;вас способом</h2><button class="demo-detail__close" type="button" aria-label="Закрыть контакты" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="demo-detail__body" tabindex="0">
+      <div class="demo-contacts__grid">
+        <section class="demo-contacts__channel" aria-labelledby="demo-contact-telegram">
+          <h3 id="demo-contact-telegram">Telegram</h3>
+          <p class="demo-contacts__account">@ilyamontt</p>
+          <img class="demo-contacts__qr" src="./assets/author-qr-telegram.png" width="309" height="330" alt="QR-код Telegram Ильи Косика">
+          <a class="demo-presentation__button demo-contacts__link" href="https://t.me/ilyamontt" target="_blank" rel="noopener noreferrer" title="Откроется в новой вкладке">Написать в&nbsp;Telegram</a>
+        </section>
+        <section class="demo-contacts__channel" aria-labelledby="demo-contact-whatsapp">
+          <h3 id="demo-contact-whatsapp">WhatsApp</h3>
+          <p class="demo-contacts__account">+375 (33) 605-09-67</p>
+          <img class="demo-contacts__qr" src="./assets/author-qr-whatsapp.png" width="288" height="330" alt="QR-код WhatsApp Ильи Косика">
+          <a class="demo-presentation__button demo-contacts__link" href="https://wa.me/375336050967" target="_blank" rel="noopener noreferrer" title="Откроется в новой вкладке">Написать в&nbsp;WhatsApp</a>
+        </section>
+        <section class="demo-contacts__channel" aria-labelledby="demo-contact-instagram">
+          <h3 id="demo-contact-instagram">Instagram</h3>
+          <p class="demo-contacts__account">@ilya_kosssik</p>
+          <img class="demo-contacts__qr" src="./assets/author-qr-instagram.png" width="295" height="330" alt="QR-код Instagram Ильи Косика">
+          <a class="demo-presentation__button demo-contacts__link" href="https://www.instagram.com/ilya_kosssik" target="_blank" rel="noopener noreferrer" title="Откроется в новой вкладке">Открыть Instagram</a>
+        </section>
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>
