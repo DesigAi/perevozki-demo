@@ -1,7 +1,8 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 
 // The Brest pages remain the source of layout and content. City editions are
-// rebuilt on every deployment; edit the source/configuration, not generated city folders.
+// rebuilt explicitly before publishing city updates; edit the source/configuration,
+// not generated city folders. Deployment serves the committed city files as-is.
 const root = new URL('./', import.meta.url);
 const read = file => readFileSync(new URL(file, root), 'utf8');
 const write = (file, content) => writeFileSync(new URL(file, root), content.replace(/\r/g, ''));

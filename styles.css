@@ -972,3 +972,31 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .site-footer__socials .social,.site-footer__socials .social img{width:min(48rem,60px);height:min(48rem,60px)}
   .site-footer__brand-note{font-size:min(13rem,16px)}
 }
+
+/* Local base-page hero iteration; city copies keep their existing composition. */
+.hero--simple-mobile .hero__benefits{order:1}
+.hero--simple-mobile .hero__actions{order:2}
+.hero__benefits--spacer{display:none}
+.mobile-benefit-break{display:none}
+.hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p{animation:none}
+.hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p.is-hero-benefit-pending{opacity:0;transform:translateX(-6rem)}
+.hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p.is-hero-benefit-visible{animation-name:hero-benefit-in;animation-duration:.76s;animation-timing-function:cubic-bezier(.42,0,.58,1);animation-fill-mode:both;animation-delay:.17s}
+.hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p.is-hero-benefit-visible:nth-child(2){animation-delay:.42s}
+.hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p.is-hero-benefit-visible:nth-child(3){animation-delay:.68s}
+@media(max-width:639px){
+  .hero--simple-mobile{--hero-action-gap:15rem}
+  .hero--simple-mobile .hero__actions{gap:var(--hero-action-gap)}
+  .hero--simple-mobile .hero__benefits--spacer{display:grid;visibility:hidden;pointer-events:none}
+  .hero--simple-mobile .hero__benefits--spacer p{animation:none}
+  .hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer){order:3;grid-template-columns:1fr;gap:20rem;margin-top:calc(var(--hero-action-gap) * 4)}
+  .hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p{display:flex;flex-direction:row;align-items:center;gap:12rem}
+  .hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) span{flex:1;min-width:0;max-width:260rem}
+  .hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p:nth-child(3){display:none}
+  .hero--simple-mobile .mobile-benefit-break{display:block}
+}
+@media(min-width:480px) and (max-width:639px){
+  .hero--simple-mobile{--hero-action-gap:8rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p:is(.is-hero-benefit-pending,.is-hero-benefit-visible){animation:none;opacity:1;transform:none}
+}
