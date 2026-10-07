@@ -973,7 +973,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .site-footer__brand-note{font-size:min(13rem,16px)}
 }
 
-/* Local base-page hero iteration; city copies keep their existing composition. */
+/* Approved mobile hero composition shared by the base page and city copies. */
 .hero--simple-mobile .hero__benefits{order:1}
 .hero--simple-mobile .hero__actions{order:2}
 .hero__benefits--spacer{display:none}

@@ -18,6 +18,24 @@ if ('IntersectionObserver' in window) {
 }
 window.lazyPhotosReady = true;
 
+// Reveal the hero benefits when each item enters the viewport.
+// Skip the invisible layout spacer in the base page and generated city copies.
+const heroBenefits = document.querySelectorAll('.hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p');
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const heroBenefitObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting || entry.intersectionRatio < .2) return;
+      entry.target.classList.remove('is-hero-benefit-pending');
+      entry.target.classList.add('is-hero-benefit-visible');
+      heroBenefitObserver.unobserve(entry.target);
+    });
+  }, { threshold: .2 });
+  heroBenefits.forEach(item => {
+    item.classList.add('is-hero-benefit-pending');
+    heroBenefitObserver.observe(item);
+  });
+}
+
 const header = document.querySelector('.site-header');
 const desktopSticky = document.createElement('div');
 desktopSticky.className = 'desktop-sticky';

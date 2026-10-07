@@ -18,8 +18,8 @@ if ('IntersectionObserver' in window) {
 }
 window.lazyPhotosReady = true;
 
-// Reveal the base-page hero benefits when each item enters the viewport.
-// City copies and the invisible layout spacer keep their existing behavior.
+// Reveal the hero benefits when each item enters the viewport.
+// Skip the invisible layout spacer in the base page and generated city copies.
 const heroBenefits = document.querySelectorAll('.hero--simple-mobile .hero__benefits:not(.hero__benefits--spacer) p');
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const heroBenefitObserver = new IntersectionObserver(entries => {

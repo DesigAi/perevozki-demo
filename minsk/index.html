@@ -93,18 +93,23 @@
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero hero--simple-mobile" aria-labelledby="hero-title">
         <div class="hero__content">
           <h1 id="hero-title">Грузоперевозки<br class="mobile-break"> и&nbsp;переезды по&nbsp;Минску.<br class="mobile-break"> <span>Машина и&nbsp;грузчики<br class="mobile-break"> под&nbsp;вашу задачу<br class="mobile-break"> от&nbsp;50&nbsp;руб./час</span></h1>
           <p class="hero__lead">Перевезём вещи, мебель, технику и&nbsp;материалы без&nbsp;срыва ваших планов. Учтём объём, этажи, лифт и&nbsp;доступ к&nbsp;адресу</p>
-          <div class="hero__benefits" aria-label="Преимущества">
+          <!-- Invisible on mobile: buttons start at the bottom of the former benefit area. -->
+          <div class="hero__benefits hero__benefits--spacer" aria-hidden="true" inert>
             <p><img src="../assets/1.svg" width="18" height="18" alt=""><span>Аккуратно перевозим<br class="desktop-benefit-break"> мебель, технику<br class="desktop-benefit-break"> и&nbsp;хрупкие вещи</span></p>
             <p><img src="../assets/2.svg" width="18" height="18" alt=""><span>Приезжаем<br class="desktop-benefit-break"> и&nbsp;выполняем заказ<br class="desktop-benefit-break"> в&nbsp;согласованное время</span></p>
-            <p><img src="../assets/3.svg" width="18" height="18" alt=""><span>Согласуем цену<br class="desktop-benefit-break"> и&nbsp;фиксируем<br class="desktop-benefit-break"> до&nbsp;выезда</span></p>
           </div>
           <div class="hero__actions">
             <button class="button button--primary" type="button" data-open-dialog>Рассчитать перевозку</button>
             <button class="button button--phone demo-phone" type="button" data-demo-contact="телефон"><img src="../assets/phone icon.svg" width="20" height="20" alt="">+375&nbsp;(33)&nbsp;555-66-77</button>
+          </div>
+          <div class="hero__benefits" aria-label="Преимущества">
+            <p><img src="../assets/1.svg" width="18" height="18" alt=""><span>Аккуратно перевозим<br class="desktop-benefit-break"> мебель, технику<br class="desktop-benefit-break"> и&nbsp;хрупкие вещи</span></p>
+            <p><img src="../assets/2.svg" width="18" height="18" alt=""><span>Приезжаем<br class="desktop-benefit-break"> и&nbsp;выполняем заказ<br class="desktop-benefit-break"> в&nbsp;согласованное время</span></p>
+            <p><img src="../assets/3.svg" width="18" height="18" alt=""><span>Согласуем цену<br class="desktop-benefit-break"> и&nbsp;фиксируем<br class="desktop-benefit-break"> до&nbsp;выезда</span></p>
           </div>
         </div>
       </section>
