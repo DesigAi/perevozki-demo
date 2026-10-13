@@ -16,6 +16,10 @@ const cities = [{
   slug: 'minsk',
   country: 'BY',
   names: { 'Бресту': 'Минску', 'Бресте': 'Минске', 'Бреста': 'Минска', 'Брест': 'Минск' }
+}, {
+  slug: 'grodno',
+  country: 'BY',
+  names: { 'Бресту': 'Гродно', 'Бресте': 'Гродно', 'Бреста': 'Гродно', 'Брест': 'Гродно' }
 }];
 
 const russianFormatter = `function formatRussianPhone(value) {
