@@ -1,6 +1,7 @@
-// Enabled only by the root page. City copies keep their existing interactions.
+// Shared by all demos; each city's visit state is independent on this host.
 (() => {
-  const visitKey = 'demo_exit_offer_seen';
+  const city = document.documentElement.dataset.city;
+  const visitKey = 'demo_exit_offer_seen' + (city ? `_${city}` : '');
   let finished = false;
   try { finished = sessionStorage.getItem(visitKey) === '1'; } catch { /* In-memory fallback. */ }
 
