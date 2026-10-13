@@ -127,6 +127,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 .form-note:empty{display:none}
 .quote-dialog__submit{grid-column:1/-1;width:100%;margin-top:4rem}
 .quote-dialog__image{background:var(--lazy-photo,url('./assets/01_hero_background.png')) 75% center/cover}
+.quote-dialog[data-offer="exit"] .quote-dialog__image{background-position:center top}
 .quote-dialog[data-service="city"] .quote-dialog__image{background-image:var(--lazy-photo,url('./assets/02_services_01_city-cargo-taxi.jpg'))}
 .quote-dialog[data-service="apartment"] .quote-dialog__image{background-image:var(--lazy-photo,url('./assets/02_services_02_apartment-moving.jpg'))}
 .quote-dialog[data-service="office"] .quote-dialog__image{background-image:var(--lazy-photo,url('./assets/02_services_03_office-moving.jpg'))}

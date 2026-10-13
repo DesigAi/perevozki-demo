@@ -23,6 +23,8 @@
 
   const banner = document.createElement('section');
   banner.className = 'cookie-banner';
+  // Demo previews open consent controls only from the footer.
+  banner.hidden = true;
   banner.setAttribute('aria-labelledby', 'cookie-banner-title');
   banner.innerHTML = `
     <h2 id="cookie-banner-title">Файлы cookie</h2>
@@ -47,7 +49,7 @@
         <p class="cookie-settings__intro">Необходимые файлы сохраняют ваш выбор. Аналитические можно включить или&nbsp;отключить.</p>
         <details class="cookie-settings__group">
           <summary>Необходимые <span>Всегда разрешены</span></summary>
-          <p>Cookie demo_cookie_choice хранит состояние выбора: до&nbsp;ответа — в&nbsp;течение сеанса, после ответа — до&nbsp;180 дней. Без&nbsp;него сайт повторно спросит о&nbsp;настройках.</p>
+          <p>Cookie demo_cookie_choice хранит состояние выбора: до&nbsp;ответа — в&nbsp;течение сеанса, после ответа — до&nbsp;180 дней. Настройки доступны через кнопку в&nbsp;футере.</p>
         </details>
         <details class="cookie-settings__group">
           <summary>Аналитические <span class="cookie-settings__analytics-state">Выключены</span></summary>
@@ -102,7 +104,7 @@
     window.dispatchEvent(new CustomEvent('cookie-consent-changed', { detail: { analytics: next === 'all' } }));
   };
 
-  banner.hidden = choice !== null;
+  banner.hidden = true;
   banner.addEventListener('click', event => {
     const button = event.target.closest('[data-cookie-action]');
     if (!button) return;

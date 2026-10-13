@@ -151,9 +151,10 @@ function showToast(message) {
 function openDialog(event) {
   lastFocused = event.currentTarget;
   closeMenu();
+  const exitOffer = event.offer === 'exit';
   const serviceId = event.currentTarget.dataset.service;
   const selectedService = serviceOptions[serviceId];
-  const photoPath = event.currentTarget.closest('.service-card')?.querySelector('.service-card__image')?.getAttribute('src') || './assets/01_hero_background.png';
+  const photoPath = exitOffer ? './assets/09_exit-offer_mover.jpg' : event.currentTarget.closest('.service-card')?.querySelector('.service-card__image')?.getAttribute('src') || './assets/01_hero_background.png';
   dialog.querySelector('.quote-dialog__image').style.setProperty('--lazy-photo', `url("${new URL(photoPath, document.baseURI).href}")`);
   if (selectedService) dialog.dataset.service = serviceId;
   else delete dialog.dataset.service;
@@ -163,6 +164,16 @@ function openDialog(event) {
     ? selectedService.tail || 'и\u00a0получить\nрасчёт перевозки'
     : 'и\u00a0узнайте итоговую цену до выезда машины';
   quoteSubmit.textContent = selectedService?.button || 'Рассчитать перевозку';
+  delete dialog.dataset.offer;
+  quoteTitleAccent.parentElement.replaceChildren(quoteTitleAccent, ' ', quoteTitleTail);
+  if (exitOffer) {
+    dialog.dataset.offer = 'exit';
+    form.elements.service.value = 'Перевозка со скидкой 10%';
+    quoteTitleTail.textContent = 'Оставьте заявку прямо сейчас и';
+    quoteTitleAccent.textContent = 'получите скидку 10% на вашу перевозку';
+    quoteTitleAccent.parentElement.replaceChildren(quoteTitleTail, ' ', quoteTitleAccent);
+    quoteSubmit.textContent = 'Получить скидку 10%';
+  }
   dialogOverlay.hidden = false;
   document.body.classList.add('is-locked');
   formNote.textContent = '';
@@ -174,7 +185,7 @@ function openDialog(event) {
 function closeDialog() {
   dialogOverlay.hidden = true;
   document.body.classList.remove('is-locked');
-  lastFocused?.focus();
+  lastFocused?.focus({ preventScroll: true });
 }
 
 function openMenu() {
@@ -212,6 +223,7 @@ menuToggles.forEach(button => button.addEventListener('click', openMenu));
 drawer.querySelector('.mobile-menu__close').addEventListener('click', closeMenu);
 drawerBackdrop.addEventListener('click', closeMenu);
 document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !dialogOverlay.hidden) closeDialog();
   if (event.key === 'Escape' && drawer.classList.contains('is-open')) closeMenu();
 });
 
@@ -348,6 +360,8 @@ function setupQuoteForm(quoteForm) {
     note.textContent = '';
     delete note.dataset.state;
     showToast('Демо: отправка заявки пока не подключена');
+    // A valid demo submission completes the same flow without sending data.
+    window.dispatchEvent(new CustomEvent('quote-form-completed'));
   });
   quoteForm.addEventListener('input', event => {
     if (event.target.matches('input, textarea')) {
