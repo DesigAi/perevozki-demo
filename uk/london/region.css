@@ -1,0 +1,10 @@
+/* English composition and one-messenger rows; shared design stays in styles.css. */
+h1,h2,h3{text-wrap:balance}
+p,.service-card__features li{text-wrap:pretty}
+.uk-pricing-note{margin:18rem 0 0;max-width:840rem;font-size:15rem;line-height:1.35;color:var(--ink-80)}
+.legal-copy h2{margin-top:25rem}
+@media(max-width:639px){
+  .quick-quote__call,.final-contact__call{width:auto;flex:1;min-width:0}
+  .quick-quote__contacts,.final-contact__actions{width:100%}
+  .uk-pricing-note{width:343rem;font-size:15rem}
+}

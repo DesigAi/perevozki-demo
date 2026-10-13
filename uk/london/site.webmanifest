@@ -1,0 +1,30 @@
+{
+  "name": "London man and van website demo",
+  "short_name": "London moving demo",
+  "lang": "en-GB",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#F8F8F8",
+  "theme_color": "#F4F4F4",
+  "icons": [
+    {
+      "src": "../../assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../assets/android-chrome-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

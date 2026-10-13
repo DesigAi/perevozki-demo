@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en-GB" data-city="uk-london" data-region="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F4F4F4">
+  <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="description" content="London moving website demo: man and van, home and office moves, furniture collection, student and storage moves.">
+  <title>Demo: Man and van &amp; removals in London</title>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Demo: Man and van &amp; removals in London">
+  <meta property="og:description" content="London moving website demo: man and van, home and office moves, furniture collection, student and storage moves.">
+  <meta property="og:image" content="https://perevozki-demo.vercel.app/uk/london/badge.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+  <meta property="og:image:alt" content="Man and van and removals across London">
+  <script>document.documentElement.classList.add('js');window.addEventListener('load',()=>{if(!window.lazyPhotosReady)document.documentElement.classList.remove('js')})</script>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../cookie-consent.css">
+  <link rel="stylesheet" href="../../demo-presentation.css">
+  <script src="./script.js" defer></script>
+  <script src="../../exit-offer.js" defer></script>
+  <script src="../../mobile-contact-spacing.js" defer></script>
+  <script src="./cookie-consent.js" defer></script>
+  <script src="./demo-presentation.js" defer></script>
+  <link rel="stylesheet" href="./region.css">
+</head>
+<body>
+
+  <section class="demo-presentation" aria-labelledby="demo-presentation-title">
+    <div class="demo-presentation__hero">
+      <h2 class="demo-presentation__title" id="demo-presentation-title">A ready-made website for <span>your moving business</span></h2>
+      <ul class="demo-presentation__topics"><li>Man and van</li><li>Furniture collection</li><li>Home and office moves</li></ul>
+      <div class="demo-presentation__author">
+        <img class="demo-presentation__photo" src="../../assets/author-photo.png" width="120" height="120" alt="Ilya Kosik">
+        <div class="demo-presentation__credentials"><strong class="demo-presentation__name">Ilya Kosik</strong><p class="demo-presentation__experience">Website development and marketing. Six years of hands-on experience.</p><p class="demo-presentation__experience">Experience working with transport businesses.</p></div>
+        <button class="demo-presentation__button demo-presentation__button--secondary demo-presentation__button--contact" type="button" data-demo-detail="demo-contacts" aria-haspopup="dialog" aria-controls="demo-contacts">Get in touch</button>
+      </div>
+      <div class="demo-presentation__actions">
+        <a class="demo-presentation__button" href="#demo-site">View the demo</a>
+        <a class="demo-presentation__button demo-presentation__button--secondary" href="#about-demo">Explore the website</a>
+      </div>
+    </div>
+    <div class="demo-presentation__benefits" id="about-demo">
+      <h2 class="demo-presentation__sr-only" id="demo-benefits-title">Website benefits</h2>
+      <div class="demo-presentation__track" role="region" aria-labelledby="demo-benefits-title" tabindex="0">
+        <article class="demo-benefit"><h3 class="demo-benefit__title">Tailored to your business</h3><p class="demo-benefit__description">Your services, identity and way of working shape the content. Customers can see the help you offer and whether it fits their move.</p><button class="demo-presentation__button demo-benefit__button" type="button" data-demo-detail="demo-detail-1" aria-haspopup="dialog" aria-controls="demo-detail-1">See what’s included</button></article>
+<article class="demo-benefit"><h3 class="demo-benefit__title">Helps customers choose you</h3><p class="demo-benefit__description">The structure answers the questions people ask before booking, explains your approach and makes it easy to get in touch.</p><button class="demo-presentation__button demo-benefit__button" type="button" data-demo-detail="demo-detail-2" aria-haspopup="dialog" aria-controls="demo-detail-2">See the approach</button></article>
+<article class="demo-benefit"><h3 class="demo-benefit__title">Room to grow with you</h3><p class="demo-benefit__description">Start with a website for your current services. Add pages, tools and features as your business develops and your needs change.</p><button class="demo-presentation__button demo-benefit__button" type="button" data-demo-detail="demo-detail-3" aria-haspopup="dialog" aria-controls="demo-detail-3">Explore future options</button></article>
+      </div>
+      <div class="demo-presentation__carousel-controls">
+        <span class="demo-presentation__progress" data-demo-progress aria-live="polite">1 of 3</span>
+        <div class="demo-presentation__arrows">
+          <button class="demo-presentation__arrow" type="button" data-demo-previous aria-label="Previous card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m5-5-5 5 5 5"/></svg></button>
+          <button class="demo-presentation__arrow" type="button" data-demo-next aria-label="Next card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p class="demo-presentation__end">Moving company website demo</p>
+
+  <div class="site-shell" id="demo-site">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Back to the top">
+        <img class="brand__mark" src="../../assets/00_brand_logo.svg" width="80" height="38" alt="">
+        <span class="brand__caption">Man and van & removals<br>across London</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#tariffs">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#process">How it works</a>
+        <a href="#contacts">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-contact">
+          <div class="availability"><span class="availability__dot" aria-hidden="true"></span><span>Daily enquiries · 8am–9pm</span></div>
+          <button class="header-phone demo-phone" type="button" data-demo-contact="phone">+44&nbsp;7700&nbsp;900123</button>
+        </div>
+        <div class="socials" aria-label="Messaging">
+          <button class="social" type="button" data-demo-contact="WhatsApp" aria-label="Message on WhatsApp"><img src="../../assets/whatsapp.svg" width="38" height="38" alt=""></button>
+        </div>
+        <button class="button button--header" type="button" data-open-dialog>Get a quote</button>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><img src="../../assets/menu burger.svg" width="28" height="22" alt=""></button>
+    </header>
+
+    <main>
+      <section class="hero hero--simple-mobile" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 id="hero-title">Man and van<br class="mobile-break"> &amp; removals in London.<br> <span>The right van and help<br> for your move</span></h1>
+          <p class="hero__lead">From a single sofa to a flat move, we’ll plan the van, loading and access around your items and moving date.</p>
+          <!-- Invisible on mobile: buttons start at the bottom of the former benefit area. -->
+          <div class="hero__benefits hero__benefits--spacer" aria-hidden="true" inert>
+            <p><img src="../../assets/1.svg" width="18" height="18" alt=""><span>Careful handling of<br class="desktop-benefit-break"> furniture, appliances<br class="desktop-benefit-break"> and fragile items</span></p>
+            <p><img src="../../assets/2.svg" width="18" height="18" alt=""><span>Arrival time<br class="desktop-benefit-break"> and moving details<br class="desktop-benefit-break"> confirmed with you</span></p>
+          </div>
+          <div class="hero__actions">
+            <button class="button button--primary" type="button" data-open-dialog>Get a quote</button>
+            <button class="button button--phone demo-phone" type="button" data-demo-contact="phone"><img src="../../assets/phone icon.svg" width="20" height="20" alt="">+44&nbsp;7700&nbsp;900123</button>
+          </div>
+          <div class="hero__benefits" aria-label="Moving benefits">
+            <p><img src="../../assets/1.svg" width="18" height="18" alt=""><span>Careful handling of<br class="desktop-benefit-break"> furniture, appliances<br class="desktop-benefit-break"> and fragile items</span></p>
+            <p><img src="../../assets/2.svg" width="18" height="18" alt=""><span>Arrival time<br class="desktop-benefit-break"> and moving details<br class="desktop-benefit-break"> confirmed with you</span></p>
+            <p><img src="../../assets/3.svg" width="18" height="18" alt=""><span>A clear quote<br class="desktop-benefit-break"> and agreed terms<br class="desktop-benefit-break"> before you book</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="services__intro">
+          <h2 id="services-title"><span>Moving home, office or just a few things?</span><br class="services__desktop-break"> Get the right help for your move,<br class="services__desktop-break"> with a clear quote before you book</h2>
+          <p>Choose a man and van for a small job or a team for a larger move. Tell us what you need, including packing or furniture dismantling, and we’ll agree the help that fits.</p>
+          <div class="services__decoration" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="services__grid" id="services-list">
+          <article class="service-card">
+            <img class="service-card__image" src="../../assets/02_services_01_uk-man-and-van.jpg" width="413" height="240" alt="White moving van on a London residential street" loading="lazy" decoding="async">
+            <h3>Man and van in London</h3><p class="service-card__description">Moving a few boxes or a bulky item? We’ll match the van and help to your load, then agree collection and delivery times around your plans.</p>
+            <ul class="service-card__features"><li>The right van for your items</li><li>Loading and carrying help if needed</li></ul>
+            <div class="service-card__actions"><button class="button service-card__order" type="button" data-open-dialog data-service="city">Get a quote</button><button class="social" type="button" data-demo-contact="WhatsApp" aria-label="WhatsApp: Man and van in London"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button></div>
+          </article>
+          <article class="service-card">
+            <img class="service-card__image" src="../../assets/02_services_02_apartment-moving.jpg" width="413" height="240" alt="Packed boxes and belongings ready for a home move" loading="lazy" decoding="async">
+            <h3>Flat and house moves</h3><p class="service-card__description">Move your furniture and belongings into your new home. We’ll plan around stairs, lifts and parking at both addresses, so moving day runs smoothly.</p>
+            <ul class="service-card__features"><li>Furniture protected for the journey</li><li>Belongings placed in the right rooms</li></ul>
+            <div class="service-card__actions"><button class="button service-card__order" type="button" data-open-dialog data-service="apartment">Get a quote</button><button class="social" type="button" data-demo-contact="WhatsApp" aria-label="WhatsApp: Flat and house moves"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button></div>
+          </article>
+          <article class="service-card">
+            <img class="service-card__image" src="../../assets/02_services_03_office-moving.jpg" width="413" height="240" alt="Office equipment and workstations being packed for a move" loading="lazy" decoding="async">
+            <h3>Office moves</h3><p class="service-card__description">Move desks, equipment and files with less disruption to your working day. We’ll agree the order of the move and where everything needs to go.</p>
+            <ul class="service-card__features"><li>Equipment and files packed and labelled</li><li>Workstations set out to your plan</li></ul>
+            <div class="service-card__actions"><button class="button service-card__order" type="button" data-open-dialog data-service="office">Get a quote</button><button class="social" type="button" data-demo-contact="WhatsApp" aria-label="WhatsApp: Office moves"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button></div>
+          </article>
+          <article class="service-card">
+            <img class="service-card__image" src="../../assets/02_services_04_furniture-moving.jpg" width="413" height="240" alt="Movers carrying a protected sofa through a doorway" loading="lazy" decoding="async">
+            <h3>Furniture collection</h3><p class="service-card__description">Bought a sofa, bed or appliance? We’ll collect it from the shop or seller and bring it to your home, checking dimensions and access before the trip.</p>
+            <ul class="service-card__features"><li>Collection time agreed with the seller</li><li>Doorways, stairs and lifts checked</li></ul>
+            <div class="service-card__actions"><button class="button service-card__order" type="button" data-open-dialog data-service="furniture">Get a quote</button><button class="social" type="button" data-demo-contact="WhatsApp" aria-label="WhatsApp: Furniture collection"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button></div>
+          </article>
+          <article class="service-card">
+            <img class="service-card__image" src="../../assets/02_services_05_uk-student-move.jpg" width="413" height="240" alt="Student and mover loading boxes and a suitcase into a van" loading="lazy" decoding="async">
+            <h3>Student moves</h3><p class="service-card__description">Move your room between halls, a shared flat or storage. We’ll arrange a van and the help you need for your boxes, bags and furniture.</p>
+            <ul class="service-card__features"><li>A small move without a full house crew</li><li>Collection fitted around your move date</li></ul>
+            <div class="service-card__actions"><button class="button service-card__order" type="button" data-open-dialog data-service="materials">Get a quote</button><button class="social" type="button" data-demo-contact="WhatsApp" aria-label="WhatsApp: Student moves"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button></div>
+          </article>
+          <article class="service-card">
+            <img class="service-card__image" src="../../assets/02_services_06_uk-storage-move.jpg" width="413" height="240" alt="Mover taking boxes into a self-storage unit" loading="lazy" decoding="async">
+            <h3>Storage moves</h3><p class="service-card__description">Taking things into self-storage or bringing them home? We’ll plan the van and loading around your items, unit access and the facility’s opening times.</p>
+            <ul class="service-card__features"><li>Storage drop-off and collection</li><li>Furniture and boxes loaded securely</li></ul>
+            <div class="service-card__actions"><button class="button service-card__order" type="button" data-open-dialog data-service="loaders">Get a quote</button><button class="social" type="button" data-demo-contact="WhatsApp" aria-label="WhatsApp: Storage moves"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button></div>
+          </article>
+        </div>
+        <button class="services__more" type="button" aria-controls="services-list" aria-expanded="false">Show more services</button>
+      </section>
+
+      <section class="tariffs" id="tariffs" aria-labelledby="tariffs-title" data-lazy-photo="../../assets/06_gallery_01_rear-loading.png">
+        <div class="tariffs__main">
+          <h2 id="tariffs-title">Prices <br class="tariffs__mobile-break">for your move <br class="tariffs__mobile-break">in London</h2>
+          <table class="tariffs__table" aria-label="How moving quotes are arranged">
+    <colgroup><col><col><col></colgroup><thead><tr><th scope="col">Moving option</th><th scope="col">What we plan</th><th scope="col">Quote basis</th></tr></thead>
+    <tbody><tr><th scope="row">Man and van</th><td>Van and driver; loading help agreed for your items</td><td>Hourly or fixed</td></tr>
+<tr><th scope="row">Van + two movers</th><td>The van, carrying, loading and unloading</td><td>Hourly or fixed</td></tr>
+<tr><th scope="row">Flat or house move</th><td>Volume, team, access and any packing required</td><td>After assessment</td></tr>
+<tr><th scope="row">Furniture collection</th><td>Item size, collection slot and delivery access</td><td>Per job</td></tr>
+<tr><th scope="row">Student move</th><td>Boxes, bags and furniture from your room</td><td>Per job</td></tr>
+<tr><th scope="row">Storage move</th><td>Items, unit access and collection or delivery</td><td>Per job</td></tr></tbody></table>
+    <p class="uk-pricing-note">Quotes are in GBP (£). Your items, route, stairs, parking and extra services affect the total. Any minimum booking, waiting time or additional charges are explained before you book.</p>
+        </div>
+        <div class="tariffs__cta" data-lazy-photo="../../assets/01_hero_background.png">
+          <h3>Get a clear quote<br>for your move<br>and the help you need</h3>
+          <button class="button button--primary tariffs__calculate" type="button" data-open-dialog>Get a quote</button>
+          <div class="tariffs__contacts" aria-label="Contact us">
+            <button class="tariffs__call demo-phone" type="button" data-demo-contact="phone"><img src="../../assets/phone icon.svg" width="20" height="20" alt="">+44&nbsp;7700&nbsp;900123</button>
+            <button class="social" type="button" data-demo-contact="WhatsApp" aria-label="Message on WhatsApp"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+        <div class="reviews__heading">
+          <h2 id="reviews-title">What customers say<br class="reviews__desktop-break"> about their moves</h2>
+          <div class="reviews__controls" aria-label="Review controls">
+            <button class="reviews__arrow" type="button" data-reviews-prev aria-label="Previous review" aria-controls="reviews-track"><svg viewBox="0 0 12 20" aria-hidden="true"><path d="m10 2-8 8 8 8"/></svg></button>
+            <button class="reviews__arrow" type="button" data-reviews-next aria-label="Next review" aria-controls="reviews-track"><svg viewBox="0 0 12 20" aria-hidden="true"><path d="m2 2 8 8-8 8"/></svg></button>
+          </div>
+        </div>
+        <div class="reviews__track" id="reviews-track" role="region" aria-label="Illustrative review layouts" tabindex="0">
+          <picture><img src="../../assets/uk-review-1.svg" width="300" height="370" alt="Illustrative review layout: home move" loading="lazy" decoding="async"></picture>
+          <picture><img src="../../assets/uk-review-2.svg" width="300" height="370" alt="Illustrative review layout: furniture collection" loading="lazy" decoding="async"></picture>
+          <picture><img src="../../assets/uk-review-3.svg" width="300" height="370" alt="Illustrative review layout: office move" loading="lazy" decoding="async"></picture>
+          <picture><img src="../../assets/uk-review-4.svg" width="300" height="370" alt="Illustrative review layout: student move" loading="lazy" decoding="async"></picture>
+          <picture><img src="../../assets/uk-review-5.svg" width="300" height="370" alt="Illustrative review layout: storage move" loading="lazy" decoding="async"></picture>
+        </div>
+        <p class="reviews__disclaimer">Illustrative review layouts for this demo. Your own genuine customer reviews will replace these before launch.</p>
+      </section>
+
+      <section class="quick-quote" id="quick-quote" aria-labelledby="quick-quote-title">
+        <div class="quick-quote__form-panel" data-lazy-photo="../../assets/box.svg">
+          <h2 id="quick-quote-title"><span>Get a clear quote for your move</span> and know what’s included before you book</h2>
+          <form class="quick-quote__form" data-quote-form novalidate>
+            <label class="field field--cargo">What are you moving, and when?<textarea name="cargo" rows="2" placeholder="e.g. sofa, 6 boxes, 24 Oct. Add stairs or lift details."></textarea></label>
+            <label class="field">Collection postcode<input name="from" autocomplete="postal-code" placeholder="e.g. SW1A 1AA" required></label>
+            <label class="field">Delivery postcode<input name="to" autocomplete="off" placeholder="e.g. N1 9GU" required></label>
+            <label class="field">Your name<input name="name" autocomplete="name" placeholder="Your name"></label>
+            <label class="field">Phone number<span class="phone-field"><img src="../../assets/uk-flag.svg" alt="" width="20" height="14"><span class="phone-field__code">+44</span><input name="phone" type="tel" autocomplete="tel-national" inputmode="numeric" placeholder="7700 900123" aria-label="UK phone number after country code +44" required></span></label>
+            <label class="consent"><input type="checkbox" name="consent" required><span>I’ve read the <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">privacy notice</a> and understand how my <a href="./consent.html" target="_blank" rel="noopener noreferrer">enquiry details</a> will be used.</span></label>
+            <p class="form-note" role="status"></p>
+            <button class="button button--primary quick-quote__submit" type="submit">Get a quote</button>
+          </form>
+        </div>
+        <div class="quick-quote__photo-panel" data-lazy-photo="../../assets/04_quick-quote_background.png">
+          <div class="quick-quote__photo-content">
+            <h2>Need to move at short notice?</h2>
+            <p>Call or WhatsApp us with your moving details. We’ll check the available slots and help you plan the job.</p>
+            <div class="quick-quote__contacts" aria-label="Contact us">
+              <button class="quick-quote__call demo-phone" type="button" data-demo-contact="phone"><img src="../../assets/phone icon white.svg" width="20" height="20" alt="">+44&nbsp;7700&nbsp;900123</button>
+              <button class="social" type="button" data-demo-contact="WhatsApp" aria-label="Message on WhatsApp"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="process" id="process" aria-labelledby="process-title">
+        <div class="process__intro" data-lazy-photo="../../assets/box-process-light.svg">
+          <h2 id="process-title"><span class="process__heading-desktop"><span class="process__heading-accent">We take care of the moving details,</span> so you can settle in without managing every step</span><span class="process__heading-mobile"><span class="process__heading-accent">We take care of your move,</span> so you can focus on settling in</span></h2>
+          <div class="process__stages" aria-label="Five steps for your move">
+            <div class="process__line" aria-hidden="true"><span class="process__line-fill"></span></div>
+            <div class="process-step"><span class="process-step__number" aria-hidden="true">1</span><div class="process-step__content"><h3>Tell us the job</h3><p>Share your items, postcodes, date and any access details.</p></div></div>
+            <div class="process-step"><span class="process-step__number" aria-hidden="true">2</span><div class="process-step__content"><h3>Plan the help</h3><p>We match the van and crew to your items and access.</p></div></div>
+            <div class="process-step"><span class="process-step__number" aria-hidden="true">3</span><div class="process-step__content"><h3>Confirm the plan</h3><p>Agree the quote, what’s included and your collection slot.</p></div></div>
+            <div class="process-step"><span class="process-step__number" aria-hidden="true">4</span><div class="process-step__content"><h3>Moving day</h3><p>We protect, load and secure your belongings for the journey.</p></div></div>
+            <div class="process-step"><span class="process-step__number" aria-hidden="true">5</span><div class="process-step__content"><h3>Settle in</h3><p>We unload and place your things where you need them.</p></div></div>
+          </div>
+        </div>
+        <div class="process__benefits" aria-labelledby="process-benefits-title" data-lazy-photo="../../assets/05_process_background.png">
+          <h2 id="process-benefits-title"><span class="process__heading-desktop">The details agreed in advance,<br class="process__desktop-break"> for a smoother moving day<br class="process__desktop-break"> with fewer surprises</span><span class="process__heading-mobile">The details agreed in advance, for a smoother moving day</span></h2>
+          <div class="process__benefit-list">
+            <div class="process-benefit"><img class="process-benefit__icon" src="../../assets/process-benefit-01.svg" width="18" height="18" alt="" aria-hidden="true"><h3>A clear quote</h3><p>We explain the price and what it covers. Stairs, parking and any extra work are discussed before you book.</p></div>
+            <div class="process-benefit"><img class="process-benefit__icon" src="../../assets/process-benefit-02.svg" width="18" height="18" alt="" aria-hidden="true"><h3>A confirmed slot</h3><p>Your collection time is agreed in advance. If plans change, you have a direct number to discuss the move.</p></div>
+            <div class="process-benefit"><img class="process-benefit__icon" src="../../assets/process-benefit-03.svg" width="18" height="18" alt="" aria-hidden="true"><h3>Careful handling</h3><p>Furniture is protected and the load secured. Let us know about fragile or valuable items when requesting your quote.</p></div>
+            <div class="process-benefit"><img class="process-benefit__icon" src="../../assets/process-benefit-04.svg" width="18" height="18" alt="" aria-hidden="true"><h3>The right team</h3><p>We recommend the van and movers for your load and access, so you don’t have to work out the arrangements yourself.</p></div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">A closer look at moving day</h2>
+        <p class="gallery__lead">See the van, loading and careful handling. These generated demo images are replaced with your own job photos before launch.</p>
+        <div class="gallery__viewport">
+          <div class="gallery__track" id="gallery-track" role="region" aria-label="Moving gallery" tabindex="0">
+            <button class="gallery__item" type="button" data-gallery-open="0" aria-label="View the loading photo"><img src="../../assets/06_gallery_01_rear-loading.png" alt="Loading belongings into a moving van" loading="lazy"></button>
+            <button class="gallery__item" type="button" data-gallery-open="1" aria-label="View the van photo"><img src="../../assets/02_services_01_uk-man-and-van.jpg" alt="Moving van on a London street" loading="lazy"></button>
+            <button class="gallery__item" type="button" data-gallery-open="2" aria-label="View the unloading photo"><img src="../../assets/06_gallery_03_unloading.png" alt="Unloading belongings at a home" loading="lazy"></button>
+          </div>
+          <button class="gallery__arrow gallery__arrow--prev" type="button" data-gallery-prev aria-label="Previous photos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg></button>
+          <button class="gallery__arrow gallery__arrow--next" type="button" data-gallery-next aria-label="Next photos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8"/></svg></button>
+        </div>
+      </section>
+      <section class="faq" id="faq" aria-labelledby="faq-title"><h2 id="faq-title">Questions before you book</h2><div class="faq__columns"><div class="faq__column"><div class="faq-item"><h3><button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-1">How much will my move cost?<span class="faq-item__icon" aria-hidden="true"></span></button></h3><div class="faq-item__answer" id="faq-answer-1" aria-hidden="true"><div class="faq-item__answer-inner"><p>Your quote depends on the items, journey, number of movers and access at both addresses. Send the postcodes, a list or photos, and your preferred date. We’ll explain whether an hourly rate or a fixed quote suits the job, and confirm what’s included before you book.</p></div></div></div>
+<div class="faq-item"><h3><button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-3">How do I choose the van and number of movers?<span class="faq-item__icon" aria-hidden="true"></span></button></h3><div class="faq-item__answer" id="faq-answer-3" aria-hidden="true"><div class="faq-item__answer-inner"><p>You don’t need to guess. Tell us what you’re moving, share photos of larger items, and mention stairs or awkward access. We’ll recommend a suitable van and the help needed. A few boxes, a heavy sofa and a full flat move can all need different arrangements.</p></div></div></div>
+<div class="faq-item"><h3><button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-5">How will you protect my belongings?<span class="faq-item__icon" aria-hidden="true"></span></button></h3><div class="faq-item__answer" id="faq-answer-5" aria-hidden="true"><div class="faq-item__answer-inner"><p>We plan the loading around your furniture and fragile items, using protective blankets and securing the load for the journey. Tell us about valuable or delicate belongings in advance. Packing requirements and any applicable insurance cover should be confirmed before you book.</p></div></div></div></div>
+<div class="faq__column"><div class="faq-item"><h3><button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-2">What’s included in the quote?<span class="faq-item__icon" aria-hidden="true"></span></button></h3><div class="faq-item__answer" id="faq-answer-2" aria-hidden="true"><div class="faq-item__answer-inner"><p>The quote sets out the van, number of movers and agreed loading, transport and unloading. Tell us if you need packing, furniture dismantling or help carrying items upstairs. We’ll confirm these services and any additional costs in writing, so you know what you’re booking.</p></div></div></div>
+<div class="faq-item"><h3><button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-4">What about stairs, parking and difficult access?<span class="faq-item__icon" aria-hidden="true"></span></button></h3><div class="faq-item__answer" id="faq-answer-4" aria-hidden="true"><div class="faq-item__answer-inner"><p>Please mention the floor, whether there’s a lift, and how close the van can park at each address. Let us know about loading bays, permits or narrow doorways too. We’ll factor these into the plan and explain any agreed charges before booking.</p></div></div></div>
+<div class="faq-item"><h3><button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-6">Can I book a short-notice move?<span class="faq-item__icon" aria-hidden="true"></span></button></h3><div class="faq-item__answer" id="faq-answer-6" aria-hidden="true"><div class="faq-item__answer-inner"><p>Call or WhatsApp us with the date, postcodes and what needs moving. We’ll check the van and team’s availability and tell you which slots are possible. For a fixed moving day, contact us early. If your plans change, get in touch to discuss rescheduling and the agreed booking terms.</p></div></div></div></div></div></section>
+      <section class="final-contact" id="contacts" aria-labelledby="final-contact-title" data-lazy-photo="../../assets/08_final-contact_background.png">
+        <div class="final-contact__content">
+          <h2 id="final-contact-title">Got a question<br class="final-contact__mobile-break"> or an item that needs extra care?</h2>
+          <p class="final-contact__lead">Call or WhatsApp us with what you’re moving. We’ll talk through the access, suggest the right help and check availability for your date.</p>
+          <div class="final-contact__actions">
+            <button class="final-contact__call demo-phone" type="button" data-demo-contact="phone"><img src="../../assets/phone icon white.svg" width="20" height="20" alt="">+44&nbsp;7700&nbsp;900123</button>
+            <button class="social" type="button" data-demo-contact="WhatsApp" aria-label="Message on WhatsApp"><img src="../../assets/whatsapp.svg" width="48" height="48" alt=""></button>
+          </div>
+          <p class="final-contact__hours">Enquiries daily, 8am–9pm · slots subject to availability</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__panel">
+        <div class="site-footer__brand">
+          <a class="site-footer__brand-link" href="#top" aria-label="Back to the top">
+            <img src="../../assets/00_brand_logo.svg" width="80" height="38" alt="">
+            <span>Man and van & removals<br>across London</span>
+          </a>
+          <div class="site-footer__reach">
+            <div class="site-footer__socials" aria-label="Messaging">
+              <button class="social" type="button" data-demo-contact="WhatsApp" aria-label="Message on WhatsApp"><img src="../../assets/whatsapp.svg" width="38" height="38" alt=""></button>
+            </div>
+            <p class="site-footer__brand-note">Enquiries every day,<br>short-notice slots by arrangement.</p>
+          </div>
+        </div>
+        <nav class="site-footer__column site-footer__services" aria-label="Services in the footer">
+          <h3>Services</h3>
+          <a href="#services">Man and van in London</a>
+          <a href="#services">Flat and house moves</a>
+          <a href="#services">Office moves</a>
+          <a href="#services">Furniture collection</a>
+          <a href="#services">Student moves</a>
+          <a href="#services">Storage moves</a>
+        </nav>
+        <nav class="site-footer__column site-footer__navigation" aria-label="Footer navigation">
+          <h3>Explore</h3>
+          <a href="#services">Services</a>
+          <a href="#tariffs">Pricing</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#process">How it works</a>
+          <a href="#gallery">Moving gallery</a>
+          <a href="#faq">FAQs</a>
+          <a href="#contacts">Contact</a>
+        </nav>
+        <div class="site-footer__column site-footer__contacts">
+          <h3>Contact</h3>
+          <button class="site-footer__phone demo-phone" type="button" data-demo-contact="phone">+44&nbsp;7700&nbsp;900123</button>
+          <button type="button" data-demo-contact="email">hello@example.com</button>
+          <div class="site-footer__location">
+            <div class="site-footer__maps">
+              <button type="button" data-demo-contact="Google Maps">Google Maps</button>
+            </div>
+            <p class="site-footer__address">Serving London · demo location</p>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__legal">
+        <small>© 2026 London moving website demo.</small>
+        <nav class="site-footer__legal-links" aria-label="Privacy and cookie information">
+          <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy notice</a>
+          <a href="./consent.html" target="_blank" rel="noopener noreferrer">Enquiry privacy</a>
+          <a href="./cookie-policy.html" target="_blank" rel="noopener noreferrer">Cookie information</a>
+          <button type="button" data-cookie-settings>Cookie settings</button>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <div class="mobile-sticky mobile-sticky--top" aria-hidden="true">
+    <div class="mobile-sticky__header"><span class="sticky-brand"><img class="brand__mark" src="../../assets/00_brand_logo.svg" alt=""><span class="brand__caption">Man and van & removals<br>across London</span></span><button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><img src="../../assets/menu burger.svg" width="28" height="22" alt=""></button></div>
+  </div>
+  <div class="mobile-sticky mobile-sticky--bottom" aria-hidden="true">
+    <div class="mobile-sticky__contacts">
+      <button class="sticky-call demo-phone" type="button" data-demo-contact="phone"><img src="../../assets/phone-icon-bronze.svg" width="20" height="20" alt="">+44&nbsp;7700&nbsp;900123</button>
+      <button class="social" type="button" data-demo-contact="WhatsApp" aria-label="WhatsApp"><img src="../../assets/whatsapp.svg" width="38" height="38" alt=""></button>
+    </div>
+  </div>
+
+  <div class="drawer-backdrop" hidden></div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="tablet-menu__brand"><img src="../../assets/00_brand_logo.svg" width="80" height="38" alt="Man and van and removals across London"></div>
+    <button class="mobile-menu__close" type="button" aria-label="Close menu"><img src="../../assets/close icon.svg" width="32" height="32" alt=""></button>
+    <a href="#services">Services</a><a href="#tariffs">Pricing</a><a href="#reviews">Reviews</a><a href="#process">How it works</a><a href="#contacts">Contact</a>
+    <div class="tablet-menu__contacts" aria-label="Contact">
+      <button class="tablet-menu__phone demo-phone" type="button" data-demo-contact="phone">+44&nbsp;7700&nbsp;900123</button>
+      <div class="tablet-menu__hours"><span class="availability__dot" aria-hidden="true"></span><span>Daily enquiries · 8am–9pm</span></div>
+      <div class="tablet-menu__socials" aria-label="Messaging">
+        <button class="social" type="button" data-demo-contact="WhatsApp" aria-label="Message on WhatsApp"><img src="../../assets/whatsapp.svg" width="38" height="38" alt=""></button>
+      </div>
+    </div>
+    <button class="button button--primary" type="button" data-open-dialog>Get a quote</button>
+  </nav>
+
+  <div class="dialog-overlay" id="quote-overlay" hidden>
+    <div class="quote-dialog" role="dialog" aria-modal="true" aria-labelledby="quote-title">
+      <div class="quote-dialog__form-area">
+        <button class="quote-dialog__close" type="button" aria-label="Close quote form"><img src="../../assets/close icon.svg" width="32" height="32" alt=""></button>
+        <h2 id="quote-title"><span data-quote-title-accent>Get a clear quote for your move</span> <span data-quote-title-tail>and know what’s included before you book</span></h2>
+        <form id="quote-form" data-quote-form novalidate>
+          <input type="hidden" name="service" value="">
+          <label class="field field--cargo">What are you moving, and when?<textarea name="cargo" rows="2" placeholder="e.g. sofa, 6 boxes, 24 Oct. Add stairs or lift details."></textarea></label>
+          <label class="field">Collection postcode<input name="from" autocomplete="postal-code" placeholder="e.g. SW1A 1AA" required></label>
+          <label class="field">Delivery postcode<input name="to" autocomplete="off" placeholder="e.g. N1 9GU" required></label>
+          <label class="field">Your name<input name="name" autocomplete="name" placeholder="Your name"></label>
+          <label class="field">Phone number<span class="phone-field"><img src="../../assets/uk-flag.svg" alt="" width="20" height="14"><span class="phone-field__code">+44</span><input name="phone" type="tel" autocomplete="tel-national" inputmode="numeric" placeholder="7700 900123" aria-label="UK phone number after country code +44" required></span></label>
+          <label class="consent"><input type="checkbox" name="consent" required><span>I’ve read the <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">privacy notice</a> and understand how my <a href="./consent.html" target="_blank" rel="noopener noreferrer">enquiry details</a> will be used.</span></label>
+          <p class="form-note" id="form-note" role="status"></p>
+          <button class="button button--primary quote-dialog__submit" type="submit">Get a quote</button>
+        </form>
+      </div>
+      <div class="quote-dialog__image" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <dialog class="gallery-lightbox" aria-label="Photo viewer">
+    <div class="gallery-lightbox__toolbar">
+      <button class="gallery-lightbox__close" type="button" aria-label="Close photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    </div>
+    <div class="gallery-lightbox__stage">
+      <button class="gallery-lightbox__nav gallery-lightbox__nav--prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg></button>
+      <img class="gallery-lightbox__image" src="../../assets/06_gallery_01_rear-loading.png" alt="" loading="lazy" decoding="async">
+      <button class="gallery-lightbox__nav gallery-lightbox__nav--next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8"/></svg></button>
+    </div>
+    <div class="gallery-lightbox__thumbs" role="group" aria-label="Choose a photo">
+      <button class="gallery-lightbox__thumb" type="button" data-gallery-thumb="0" aria-label="Show loading photo" aria-pressed="false"><img src="../../assets/06_gallery_01_rear-loading.png" alt="" loading="lazy" decoding="async"></button>
+      <button class="gallery-lightbox__thumb" type="button" data-gallery-thumb="1" aria-label="Show van photo" aria-pressed="false"><img src="../../assets/02_services_01_uk-man-and-van.jpg" alt="" loading="lazy" decoding="async"></button>
+      <button class="gallery-lightbox__thumb" type="button" data-gallery-thumb="2" aria-label="Show unloading photo" aria-pressed="false"><img src="../../assets/06_gallery_03_unloading.png" alt="" loading="lazy" decoding="async"></button>
+    </div>
+  </dialog>
+
+  <div class="demo-toast" role="status" aria-live="polite"></div>
+
+  <dialog class="demo-detail" id="demo-detail-1" aria-labelledby="demo-detail-title-1">
+    <div class="demo-detail__header"><h2 class="demo-detail__title" id="demo-detail-title-1">A website tailored to your moving business</h2><button class="demo-detail__close" type="button" aria-label="Close details" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="demo-detail__body" tabindex="0"><p>The structure is ready. Your services, prices, photos and contact details turn it into a website for your own business.</p><h3>Your look and identity</h3><p>Your logo and colours replace the demo branding. We use your photographs to show your vans, team and work. If suitable photos aren’t available, realistic generated images can be discussed separately.</p><h3>Your services and terms</h3><p>We keep the services you actually offer and explain how customers can book them. Prices, service areas, opening hours and quote conditions reflect the way you work.</p><h3>Clear, connected content</h3><p>Each section answers a customer question, from choosing the right service to understanding the quote and making an enquiry. You don’t have to write every page from scratch.</p><h3>Ready for launch</h3><p>Your contact links and enquiry forms are connected as part of the agreed launch setup. Privacy and cookie pages need your business details and review before launch.</p><p>This preview uses sample contact details, illustrative reviews and generated images. It doesn’t send booking requests. Extra sections and features are quoted separately.</p></div>
+  </dialog>
+
+  <dialog class="demo-detail" id="demo-detail-2" aria-labelledby="demo-detail-title-2">
+    <div class="demo-detail__header"><h2 class="demo-detail__title" id="demo-detail-title-2">Help customers choose your company</h2><button class="demo-detail__close" type="button" aria-label="Close details" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="demo-detail__body" tabindex="0"><p>A new customer wants to know whether you can handle their move, what it will cost and who will turn up. The website helps answer those questions before the first conversation.</p><h3>Built around customers’ questions</h3><p>The structure draws on research into moving businesses and customers’ experiences. Your own working practices provide the answers.</p><h3>A clear first impression</h3><p>The opening section shows what you do, where you work and how to get a quote.</p><h3>Services people recognise</h3><p>Customers can find their situation: a flat move, a furniture collection or a trip to storage. Each card explains the help available.</p><h3>A price they can understand</h3><p>The quote section explains what affects the cost and what details you need to price the job.</p><h3>Reasons to trust you</h3><p>Real reviews and photographs show how your business works. The demo examples are replaced with your own verified material before launch.</p><h3>An easy next step</h3><p>The form collects the starting details. Phone and WhatsApp buttons let customers ask about availability directly.</p><h3>A moving day they can picture</h3><p>The process, practical benefits and FAQs explain the van, team, access and handling arrangements, so customers know what to expect.</p></div>
+  </dialog>
+
+  <dialog class="demo-detail" id="demo-detail-3" aria-labelledby="demo-detail-title-3">
+    <div class="demo-detail__header"><h2 class="demo-detail__title" id="demo-detail-title-3">A website that can grow with your business</h2><button class="demo-detail__close" type="button" aria-label="Close details" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="demo-detail__body" tabindex="0"><p>Start with a focused website for your current services. Once it’s adapted and launched, you can use it for advertising and introduce new customers to your company.</p><p>Further work can be added when there’s a clear business need:</p><ul><li><strong>Extra sections.</strong> Explain specialist services or what makes your team different.</li><li><strong>Quote tools.</strong> Offer estimates based on your own pricing rules.</li><li><strong>Service pages.</strong> Give each type of move more space and detail.</li><li><strong>Helpful articles.</strong> Answer customers’ questions about preparing for a move.</li><li><strong>Search optimisation.</strong> Develop pages around relevant local searches.</li><li><strong>New features.</strong> Support the next stage of your business.</li></ul><p>The scope and price of any extra work are agreed before it starts. A fully bespoke website is also available as a separate project.</p></div>
+  </dialog>
+
+  <dialog class="demo-detail demo-contacts" id="demo-contacts" aria-labelledby="demo-contacts-title">
+    <div class="demo-detail__header"><h2 class="demo-detail__title" id="demo-contacts-title">Get in touch with me</h2><button class="demo-detail__close" type="button" aria-label="Close contact details" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="demo-detail__body" tabindex="0">
+      <div class="demo-contacts__grid">
+        <section class="demo-contacts__channel" aria-labelledby="demo-contact-telegram">
+          <h3 id="demo-contact-telegram">Telegram</h3>
+          <img class="demo-contacts__qr" src="../../assets/author-qr-telegram.png" width="309" height="330" alt="Ilya Kosik’s Telegram QR code">
+          <a class="demo-presentation__button demo-contacts__link" href="https://t.me/ilyamontt" target="_blank" rel="noopener noreferrer" title="Opens in a new tab">Message on Telegram</a>
+        </section>
+        <section class="demo-contacts__channel" aria-labelledby="demo-contact-whatsapp">
+          <h3 id="demo-contact-whatsapp">WhatsApp</h3>
+          <img class="demo-contacts__qr" src="../../assets/author-qr-whatsapp.png" width="288" height="330" alt="Ilya Kosik’s WhatsApp QR code">
+          <a class="demo-presentation__button demo-contacts__link" href="https://wa.me/375336050967" target="_blank" rel="noopener noreferrer" title="Opens in a new tab">Message on WhatsApp</a>
+        </section>
+        <section class="demo-contacts__channel" aria-labelledby="demo-contact-instagram">
+          <h3 id="demo-contact-instagram">Instagram</h3>
+          <img class="demo-contacts__qr" src="../../assets/author-qr-instagram.png" width="295" height="330" alt="Ilya Kosik’s Instagram QR code">
+          <a class="demo-presentation__button demo-contacts__link" href="https://www.instagram.com/ilya_kosssik" target="_blank" rel="noopener noreferrer" title="Opens in a new tab">View Instagram</a>
+        </section>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

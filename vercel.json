@@ -10,10 +10,15 @@
     { "src": "/minsk/", "dest": "/minsk/index.html" },
     { "src": "/grodno", "headers": { "Location": "/grodno/" }, "status": 308 },
     { "src": "/grodno/", "dest": "/grodno/index.html" },
+    { "src": "/uk", "headers": { "Location": "/uk/london/" }, "status": 308 },
+    { "src": "/uk/", "headers": { "Location": "/uk/london/" }, "status": 308 },
+    { "src": "/uk/london", "headers": { "Location": "/uk/london/" }, "status": 308 },
+    { "src": "/uk/london/", "dest": "/uk/london/index.html" },
     { "handle": "filesystem" },
     { "src": "/moscow/(.*)", "dest": "/moscow/404.html", "status": 404 },
     { "src": "/minsk/(.*)", "dest": "/minsk/404.html", "status": 404 },
     { "src": "/grodno/(.*)", "dest": "/grodno/404.html", "status": 404 },
+    { "src": "/uk/(.*)", "dest": "/uk/london/404.html", "status": 404 },
     { "src": "/(.*)", "dest": "/404.html", "status": 404 }
   ]
 }
