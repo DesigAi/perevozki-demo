@@ -63,10 +63,13 @@ function localiseSections(html) {
     ].map(row => `<tr><th scope="row">${row[0]}</th><td>${row[1]}</td><td>${row[2]}</td></tr>`).join('\n')}</tbody></table>
     <p class="uk-pricing-note">Illustrative starting prices, with a 2-hour minimum for hourly bookings. Your final quote reflects the load, route and access; packing materials, parking and road charges are confirmed separately</p>`);
   html = html.replace(/<section class="faq"[\s\S]*?<\/section>/, `<section class="faq" id="faq" aria-labelledby="faq-title"><h2 id="faq-title">Questions before you book</h2><div class="faq__columns">${[[0,2,4],[1,3,5]].map(indices => `<div class="faq__column">${indices.map(index => `<div class="faq-item"><h3><button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-${index+1}">${faq[index][0]}<span class="faq-item__icon" aria-hidden="true"></span></button></h3><div class="faq-item__answer" id="faq-answer-${index+1}" aria-hidden="true"><div class="faq-item__answer-inner"><p>${faq[index][1]}</p></div></div></div>`).join('\n')}</div>`).join('\n')}</div></section>`);
+  html = html.replace(/(<h2 id="reviews-title">)[\s\S]*?(<\/h2>)/, '$1What our customers say$2');
   let review = 0;
   html = html.replace(/<picture><img[^>]*review-[^>]*><\/picture>/g, () => `<picture><img src="${asset(`uk-review-${++review}.svg`)}" width="300" height="370" alt="Illustrative review layout: ${['home move','furniture collection','office move','student move','storage move'][review-1]}" loading="lazy" decoding="async"></picture>`);
   html = html.replace(/(<div class="(?:process-benefit|services__intro|quick-quote__photo-content)"[^>]*>[\s\S]*?<p>)([\s\S]*?)(<\/p>)/g, (match, start, body, end) => start + body.replace(/\.(\s*)$/, '$1') + end);
-  html = html.replaceAll('06_gallery_02_fleet.png', '02_services_01_uk-man-and-van.jpg');
+  html = html.replaceAll('06_gallery_02_fleet.png', '02_services_01_uk-man-and-van.jpg')
+    .replaceAll('06_gallery_01_rear-loading.png', '06_gallery_01_uk-rear-loading.jpg')
+    .replaceAll('06_gallery_03_unloading.png', '06_gallery_03_uk-unloading.jpg');
   for (let index = 0; index < details.length; index++) {
     const id = index + 1;
     html = html.replace(new RegExp(`(<dialog class="demo-detail" id="demo-detail-${id}"[\\s\\S]*?<h2[^>]*>)[\\s\\S]*?(</h2>)`), `$1${details[index].title}$2`);

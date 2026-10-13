@@ -11,6 +11,7 @@ p,.service-card__features li{text-wrap:pretty}
 .quote-dialog{height:auto}
 .quote-dialog__form-area{padding-bottom:30rem}
 .uk-feature-break,.uk-desktop-break{display:none}
+.reviews__track img{box-sizing:border-box;border:1px solid #cdc6bd}
 @media(min-width:1200px){
   .site-header{display:flex;justify-content:space-between;gap:0}
   .brand,.desktop-nav,.header-actions{flex:none}
@@ -22,10 +23,12 @@ p,.service-card__features li{text-wrap:pretty}
   .tariffs__main h2{grid-column:1;grid-row:1;margin-bottom:30rem}
   .tariffs__table{grid-column:1;grid-row:2}
   .tariffs__cta{grid-column:2;grid-row:2;height:auto;align-self:stretch}
-  .uk-pricing-note{grid-column:1/-1;grid-row:3;max-width:1100rem;margin:0}
+  .uk-pricing-note{grid-column:1;grid-row:3;max-width:100%;min-width:0;margin:0;text-wrap:balance}
   .process-step p{text-wrap:balance}
   .gallery__lead{text-wrap:balance}
   .site-footer__location{margin-top:auto}
+  .site-footer__legal-links{grid-column:2/-1;display:flex;align-items:center;justify-content:flex-start;gap:24px}
+  .site-footer__legal-links>*{white-space:nowrap}
 }
 @media(max-width:639px){
   .quick-quote__call,.final-contact__call,.tariffs__call{width:auto;flex:1;min-width:0}
