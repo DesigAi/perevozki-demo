@@ -182,7 +182,7 @@ document.querySelectorAll('[data-quote-form]').forEach(quoteForm => {
     fields.forEach(field => field.setAttribute('aria-invalid', String(!valid(field))));
     const invalid = fields.find(field => !valid(field));
     if (invalid) {
-      note.textContent = 'Complete the required fields and tick the privacy checkbox.';
+      note.textContent = 'Complete the required fields.';
       note.dataset.state = 'error';
       invalid.focus();
       return;

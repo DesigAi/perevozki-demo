@@ -1,10 +1,44 @@
 /* English composition and one-messenger rows; shared design stays in styles.css. */
 h1,h2,h3{text-wrap:balance}
 p,.service-card__features li{text-wrap:pretty}
-.uk-pricing-note{margin:18rem 0 0;max-width:840rem;font-size:15rem;line-height:1.35;color:var(--ink-80)}
+.service-card__features li{text-wrap:balance}
+.uk-pricing-note{margin:18rem 0 0;max-width:840rem;font-size:15rem;line-height:1.35;color:inherit;opacity:.8}
 .legal-copy h2{margin-top:25rem}
+.uk-form-privacy{grid-column:1/-1;margin:5rem 0 0;font-size:12rem;line-height:1.25;color:#69645e;text-wrap:balance}
+.uk-form-privacy a{color:var(--bronze);text-decoration:underline;text-underline-offset:2px}
+.quick-quote__form .uk-form-privacy{color:rgb(255 255 255 / 75%)}
+.quick-quote__form .uk-form-privacy a{color:var(--gold)}
+.quote-dialog{height:auto}
+.quote-dialog__form-area{padding-bottom:30rem}
+.uk-feature-break,.uk-desktop-break{display:none}
+@media(min-width:1200px){
+  .site-header{display:flex;justify-content:space-between;gap:0}
+  .brand,.desktop-nav,.header-actions{flex:none}
+  .quote-dialog__form-area{padding:30rem}
+  .uk-feature-break,.uk-desktop-break{display:initial}
+  .service-card__features li{text-wrap:initial}
+  .hero__lead{max-width:650rem;text-wrap:initial}
+  .tariffs__main{display:contents}
+  .tariffs__main h2{grid-column:1;grid-row:1;margin-bottom:30rem}
+  .tariffs__table{grid-column:1;grid-row:2}
+  .tariffs__cta{grid-column:2;grid-row:2;height:auto;align-self:stretch}
+  .uk-pricing-note{grid-column:1/-1;grid-row:3;max-width:1100rem;margin:0}
+  .process-step p{text-wrap:balance}
+  .gallery__lead{text-wrap:balance}
+  .site-footer__location{margin-top:auto}
+}
 @media(max-width:639px){
-  .quick-quote__call,.final-contact__call{width:auto;flex:1;min-width:0}
+  .quick-quote__call,.final-contact__call,.tariffs__call{width:auto;flex:1;min-width:0}
   .quick-quote__contacts,.final-contact__actions{width:100%}
   .uk-pricing-note{width:343rem;font-size:15rem}
+  .uk-form-privacy{font-size:15rem}
+}
+@media(min-width:640px) and (max-width:1199px){
+  .quote-dialog__form-area{padding-bottom:30px}
+  .uk-form-privacy{font-size:12px}
+  .site-footer__contacts>button[data-demo-contact="email"]{grid-column:1}
+}
+@media(min-width:480px) and (max-width:639px){
+  .quote-dialog__form-area{padding-bottom:30px}
+  .uk-form-privacy{font-size:15px}
 }

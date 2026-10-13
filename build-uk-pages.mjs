@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { services, faq, details, copy, attributes } from './uk/content.mjs';
+import './uk/build-review-layouts.mjs';
 
 // Run explicitly after editing the shared Brest layout or British content.
 // Generated files are committed; Vercel serves them without a build command.
@@ -24,7 +25,8 @@ function localiseLayout(source) {
     .replaceAll('29 491-19-11', '7700 900123')
     .replaceAll('autocomplete="street-address"', 'autocomplete="postal-code"')
     .replace(/\s*<button\b[^>]*data-demo-contact="(?:Viber|Telegram|Яндекс Карты)"[^>]*>[\s\S]*?<\/button>/g, '')
-    .replace(/<label class="consent">[\s\S]*?<\/label>/g, '<label class="consent"><input type="checkbox" name="consent" required><span>I’ve read the <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">privacy notice</a> and understand how my <a href="./consent.html" target="_blank" rel="noopener noreferrer">enquiry details</a> will be used.</span></label>')
+    .replace(/<label class="consent">[\s\S]*?<\/label>/g, '<p class="uk-form-privacy">We’ll use your details to respond to your enquiry<br>Read our <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a> to find out more</p>')
+    .replace(/\s*<a\b[^>]*href="\.\/consent\.html"[^>]*>[\s\S]*?<\/a>/g, '')
     .replaceAll('data-demo-contact="телефон"', 'data-demo-contact="phone"')
     .replaceAll('data-demo-contact="почту"', 'data-demo-contact="email"')
     .replaceAll('post@mail.com', 'hello@example.com');
@@ -41,7 +43,8 @@ function localiseLayout(source) {
 }
 
 function localiseSections(html) {
-  html = html.replace(/<h1 id="hero-title">[\s\S]*?<\/h1>/, '<h1 id="hero-title">Man and van<br class="mobile-break"> &amp; removals in London.<br> <span>The right van and help<br> for your move</span></h1>');
+  html = html.replace(/<h1 id="hero-title">[\s\S]*?<\/h1>/, '<h1 id="hero-title">Man and van<br class="mobile-break"> &amp; removals in London<br> <span>The right van and help<br> for your move</span></h1>');
+  html = html.replace(/(<p class="hero__lead">)[\s\S]*?(<\/p>)/, '$1From a single sofa to a flat move, we’ll plan the van,<br class="uk-desktop-break"> loading and access around your items and moving date$2');
   html = html.replace(/(<div class="services__grid" id="services-list">)[\s\S]*?(\n        <\/div>\n        <button class="services__more")/, (match, start, end) => start + '\n' + services.map(service => `          <article class="service-card">
             <img class="service-card__image" src="${asset(service.image)}" width="413" height="240" alt="${service.alt}" loading="lazy" decoding="async">
             <h3>${service.title}</h3><p class="service-card__description">${service.description}</p>
@@ -49,32 +52,37 @@ function localiseSections(html) {
             <div class="service-card__actions"><button class="button service-card__order" type="button" data-open-dialog data-service="${service.id}">Get a quote</button><button class="social" type="button" data-demo-contact="WhatsApp" aria-label="WhatsApp: ${service.title}"><img src="${asset('whatsapp.svg')}" width="48" height="48" alt=""></button></div>
           </article>`).join('\n') + end);
   html = html.replace(/<table class="tariffs__table"[\s\S]*?<\/table>/, `<table class="tariffs__table" aria-label="How moving quotes are arranged">
-    <colgroup><col><col><col></colgroup><thead><tr><th scope="col">Moving option</th><th scope="col">What we plan</th><th scope="col">Quote basis</th></tr></thead>
+    <colgroup><col><col><col></colgroup><thead><tr><th scope="col">Moving option</th><th scope="col">What’s included</th><th scope="col">Price</th></tr></thead>
     <tbody>${[
-      ['Man and van', 'Van and driver; loading help agreed for your items', 'Hourly or fixed'],
-      ['Van + two movers', 'The van, carrying, loading and unloading', 'Hourly or fixed'],
-      ['Flat or house move', 'Volume, team, access and any packing required', 'After assessment'],
-      ['Furniture collection', 'Item size, collection slot and delivery access', 'Per job'],
-      ['Student move', 'Boxes, bags and furniture from your room', 'Per job'],
-      ['Storage move', 'Items, unit access and collection or delivery', 'Per job']
+      ['Man and van', 'Van and one mover, loading and unloading', 'From £50/hr'],
+      ['Van + two movers', 'Van, two movers, loading, carrying and unloading', 'From £65/hr'],
+      ['Flat or house move', 'Van and two movers for your furniture and boxes', 'From £65/hr'],
+      ['Furniture collection', 'Van and two movers, collection and delivery', 'From £130'],
+      ['Student move', 'Van and one mover for your room’s belongings', 'From £100'],
+      ['Storage move', 'Van and one mover, transport and loading help', 'From £100']
     ].map(row => `<tr><th scope="row">${row[0]}</th><td>${row[1]}</td><td>${row[2]}</td></tr>`).join('\n')}</tbody></table>
-    <p class="uk-pricing-note">Quotes are in GBP (£). Your items, route, stairs, parking and extra services affect the total. Any minimum booking, waiting time or additional charges are explained before you book.</p>`);
+    <p class="uk-pricing-note">Illustrative starting prices, with a 2-hour minimum for hourly bookings. Your final quote reflects the load, route and access; packing materials, parking and road charges are confirmed separately</p>`);
   html = html.replace(/<section class="faq"[\s\S]*?<\/section>/, `<section class="faq" id="faq" aria-labelledby="faq-title"><h2 id="faq-title">Questions before you book</h2><div class="faq__columns">${[[0,2,4],[1,3,5]].map(indices => `<div class="faq__column">${indices.map(index => `<div class="faq-item"><h3><button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-${index+1}">${faq[index][0]}<span class="faq-item__icon" aria-hidden="true"></span></button></h3><div class="faq-item__answer" id="faq-answer-${index+1}" aria-hidden="true"><div class="faq-item__answer-inner"><p>${faq[index][1]}</p></div></div></div>`).join('\n')}</div>`).join('\n')}</div></section>`);
   let review = 0;
   html = html.replace(/<picture><img[^>]*review-[^>]*><\/picture>/g, () => `<picture><img src="${asset(`uk-review-${++review}.svg`)}" width="300" height="370" alt="Illustrative review layout: ${['home move','furniture collection','office move','student move','storage move'][review-1]}" loading="lazy" decoding="async"></picture>`);
+  html = html.replace(/(<div class="(?:process-benefit|services__intro|quick-quote__photo-content)"[^>]*>[\s\S]*?<p>)([\s\S]*?)(<\/p>)/g, (match, start, body, end) => start + body.replace(/\.(\s*)$/, '$1') + end);
   html = html.replaceAll('06_gallery_02_fleet.png', '02_services_01_uk-man-and-van.jpg');
   for (let index = 0; index < details.length; index++) {
     const id = index + 1;
     html = html.replace(new RegExp(`(<dialog class="demo-detail" id="demo-detail-${id}"[\\s\\S]*?<h2[^>]*>)[\\s\\S]*?(</h2>)`), `$1${details[index].title}$2`);
     html = html.replace(new RegExp(`(<dialog class="demo-detail" id="demo-detail-${id}"[\\s\\S]*?<div class="demo-detail__body" tabindex="0">)[\\s\\S]*?(</div>\\s*</dialog>)`), `$1${details[index].body}$2`);
   }
+  // Protect function words in visible text, keeping them with the next word.
+  html = html.replace(/>([^<>]+)</g, (match, value) => /[{}]/.test(value) ? match : '>' + value.replace(/\b(a|an|the|and|or|to|for|of|in|on|at|with|from|by|your|our|their) +/gi, '$1&nbsp;') + '<');
+  html = html.replace(/(<p class="(?:hero__lead|service-card__description|gallery__lead|final-contact__lead|uk-pricing-note)[^"]*">)([\s\S]*?)(<\/p>)/g, (match, start, body, end) => start + body.replace(/\.(\s*)$/, '$1') + end);
+  html = html.replace(/(<div class="process-step__content">[\s\S]*?<p>)([\s\S]*?)(<\/p>)/g, (match, start, body, end) => start + body.replace(/\.(\s*)$/, '$1') + end);
   return html;
 }
 
 const legalContent = {
-  'privacy-policy.html': ['Privacy notice — demo', '<p>This is a website preview, not a live moving service. Sample phone numbers, email addresses, prices and reviews do not identify a trading company.</p><h2>Enquiry forms</h2><p>Forms are checked in your browser but do not send the details you enter to a server. Use sample details when testing the preview.</p><h2>Local settings</h2><p>The preview stores your cookie choice and whether the exit offer has been shown. An optional analytics marker demonstrates the settings switch; no external analytics service is connected.</p><h2>External links</h2><p>The website designer’s contact links open third-party services. Their own privacy information applies when you visit them.</p><h2>Before a business launch</h2><p>This page must be replaced with the operator’s privacy information, including its identity, contact details, enquiry handling, storage periods and any services receiving data. This demo page is not a finished privacy notice for a real business.</p>'],
-  'consent.html': ['Your enquiry details — demo', '<p>The forms in this preview do not send your enquiry. Entering details only demonstrates the layout and validation.</p><h2>On a live business website</h2><p>Your name, phone number, move details and postcodes would be used to respond to your enquiry and prepare a quote. The operator must explain how this works in its own privacy notice before launch.</p><h2>No marketing signup</h2><p>The demo checkbox does not subscribe you to advertising or transfer your details to a mailing list.</p>'],
-  'cookie-policy.html': ['Cookie information — demo', '<p>Cookie controls are available from the footer. They do not open automatically in this preview.</p><h2>Necessary settings</h2><p>demo_cookie_choice remembers your choice. Before a choice it lasts for the browser session; a saved choice is retained for up to 180 days.</p><h2>Optional analytics marker</h2><p>demo_analytics demonstrates the analytics switch for up to 180 days. It does not connect to an external analytics provider and is removed when optional cookies are turned off.</p><h2>Exit offer</h2><p>Session storage remembers whether the London exit offer has been shown during this tab’s visit. It is not shared with external services.</p><h2>Live website setup</h2><p>The operator’s actual cookies and services must be reviewed and described before business launch.</p>']
+  'privacy-policy.html': ['Privacy Policy — demo', '<p>This is a website preview, not a live moving service. Sample phone numbers, email addresses, prices and reviews do not identify a trading company.</p><h2>Enquiry forms</h2><p>Forms are checked in your browser but do not send the details you enter to a server. Use sample details when testing the preview.</p><h2>Local settings</h2><p>The preview stores your cookie choice and whether the exit offer has been shown. An optional analytics marker demonstrates the settings switch; no external analytics service is connected.</p><h2>External links</h2><p>The website designer’s contact links open third-party services. Their own privacy information applies when you visit them.</p><h2>Before a business launch</h2><p>This page must be replaced with the operator’s privacy information, including its identity, contact details, enquiry handling, storage periods and any services receiving data. This demo page is not a finished privacy notice for a real business.</p>'],
+  'consent.html': ['Your enquiry details — demo', '<p>The forms in this preview do not send your enquiry. Entering details only demonstrates the layout and validation.</p><h2>On a live business website</h2><p>Your name, phone number, move details and postcodes would be used to respond to your enquiry and prepare a quote. The operator must explain how this works in its own privacy notice before launch.</p><h2>No marketing signup</h2><p>Submitting an enquiry does not subscribe you to advertising or transfer your details to a mailing list.</p>'],
+  'cookie-policy.html': ['Cookie Policy — demo', '<p>Cookie controls are available from the footer. They do not open automatically in this preview.</p><h2>Necessary settings</h2><p>demo_cookie_choice remembers your choice. Before a choice it lasts for the browser session; a saved choice is retained for up to 180 days.</p><h2>Optional analytics marker</h2><p>demo_analytics demonstrates the analytics switch for up to 180 days. It does not connect to an external analytics provider and is removed when optional cookies are turned off.</p><h2>Exit offer</h2><p>Session storage remembers whether the London exit offer has been shown during this tab’s visit. It is not shared with external services.</p><h2>Live website setup</h2><p>The operator’s actual cookies and services must be reviewed and described before business launch.</p>']
 };
 
 for (const file of ['index.html', 'privacy-policy.html', 'consent.html', 'cookie-policy.html', 'thank-you.html', '404.html']) {
@@ -132,13 +140,14 @@ const dynamicCopy = {
   'Рассчитать перевозку': 'Get a quote', 'Перевозка со скидкой 10%': 'Move with a 10% discount',
   'Оставьте заявку прямо сейчас и': 'Request your quote now and', 'получите скидку 10% на вашу перевозку': 'get 10% off your move', 'Получить скидку 10%': 'Get 10% off',
   'Демо: ссылка на ': 'Demo: ', ' пока не подключена': ' contact is not connected', 'Свернуть услуги': 'Show fewer services', 'Смотреть ещё': 'Show more services',
-  'Этот раздел появится на следующем этапе вёрстки': 'This section is not available in the demo', 'Заполните все поля и подтвердите согласие.': 'Complete the required fields and tick the privacy checkbox.', 'Проверьте номер телефона.': 'Enter a UK number with 10 digits after +44.', 'Демо: отправка заявки пока не подключена': 'Demo: no enquiry has been sent'
+  'Этот раздел появится на следующем этапе вёрстки': 'This section is not available in the demo', 'Заполните все поля и подтвердите согласие.': 'Complete the required fields.', 'Проверьте номер телефона.': 'Enter a UK number with 10 digits after +44.', 'Демо: отправка заявки пока не подключена': 'Demo: no enquiry has been sent'
 };
 for (const file of ['script.js','legal.js']) {
   let js = read(file).replaceAll("'./assets/", "'../../assets/");
   js = js.replace(/function formatBelarusPhone\(value\) \{[\s\S]*?\n\}/, phoneFormatter)
     .replaceAll('formatBelarusPhone', 'formatUKPhone').replaceAll('.length !== 9', '.length !== 10')
-    .replaceAll('phone.value = formatUKPhone(phone.value)', 'formatUKPhoneInput(phone, event)');
+    .replaceAll('phone.value = formatUKPhone(phone.value)', 'formatUKPhoneInput(phone, event)')
+    .replaceAll('const serviceId = event.currentTarget.dataset.service;', 'const serviceId = exitOffer ? undefined : event.currentTarget.dataset.service;');
   if (file === 'script.js') js = js.replace(/const serviceOptions = \{[\s\S]*?\n\};/, `const serviceOptions = ${JSON.stringify(Object.fromEntries(services.map(service => [service.id, {title:service.title,heading:service.heading,tail:'and plan the help you need',button:'Get a quote'}])), null, 2)};`);
   js = replaceCopy(js, dynamicCopy);
   write(`${folder}/${file}`, js);

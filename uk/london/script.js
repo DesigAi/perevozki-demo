@@ -202,7 +202,7 @@ function openDialog(event) {
   lastFocused = event.currentTarget;
   closeMenu();
   const exitOffer = event.offer === 'exit';
-  const serviceId = event.currentTarget.dataset.service;
+  const serviceId = exitOffer ? undefined : event.currentTarget.dataset.service;
   const selectedService = serviceOptions[serviceId];
   const photoPath = exitOffer ? '../../assets/09_exit-offer_mover.jpg' : event.currentTarget.closest('.service-card')?.querySelector('.service-card__image')?.getAttribute('src') || '../../assets/01_hero_background.png';
   dialog.querySelector('.quote-dialog__image').style.setProperty('--lazy-photo', `url("${new URL(photoPath, document.baseURI).href}")`);
@@ -395,7 +395,7 @@ function setupQuoteForm(quoteForm) {
     fields.forEach(field => field.setAttribute('aria-invalid', String(!fieldIsValid(field))));
     const invalid = fields.find(field => !fieldIsValid(field));
     if (invalid) {
-      note.textContent = 'Complete the required fields and tick the privacy checkbox.';
+      note.textContent = 'Complete the required fields.';
       note.dataset.state = 'error';
       invalid.focus();
       return;
