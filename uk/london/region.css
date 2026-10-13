@@ -31,6 +31,7 @@ p,.service-card__features li{text-wrap:pretty}
   .site-footer__legal-links>*{white-space:nowrap}
 }
 @media(max-width:639px){
+  .process-benefit:nth-child(3) p{max-width:335rem}
   .quick-quote__call,.final-contact__call,.tariffs__call{width:auto;flex:1;min-width:0}
   .quick-quote__contacts,.final-contact__actions{width:100%}
   .uk-pricing-note{width:343rem;font-size:15rem}
