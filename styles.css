@@ -99,6 +99,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
 .quote-dialog__form-area{padding:30rem 60rem 24rem 30rem;overflow:auto;scrollbar-width:thin}
 .quote-dialog__close{position:absolute;right:10rem;top:10rem;z-index:2;width:32rem;height:32rem;border:0;background:transparent;padding:0;display:grid;place-items:center}
 .quote-dialog__close img{display:block;width:32rem;height:auto}
+html[data-demo-input="pointer"] .quote-dialog[data-offer="exit"] .quote-dialog__close:focus{outline:none}
 .quote-dialog h2{font-family:Manrope,Arial,sans-serif;font-size:32rem;line-height:1.1;font-weight:600;margin:0 0 25rem;max-width:415rem}
 .quote-dialog h2 [data-quote-title-accent]{color:var(--bronze)}
 #quote-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10rem 18rem}
@@ -149,6 +150,7 @@ button:not(:disabled):hover,.button:hover{filter:brightness(1.07)}.button:active
   .quote-dialog{max-height:none;flex:none;margin:auto 0}
   .quote-dialog__form-area{padding:30rem 30rem 10rem;overflow:visible}
   .quote-dialog h2{font-size:30rem;max-width:470rem;margin-bottom:25rem}
+  .quote-dialog[data-offer="exit"] h2{max-width:450rem}
   .quote-dialog[data-service] h2{white-space:pre-line}
   #quote-form{width:400rem;gap:14rem 18rem}
   .consent{line-height:1.2;margin-top:5rem}

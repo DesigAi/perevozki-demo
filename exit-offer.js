@@ -17,6 +17,8 @@
   const showOffer = () => {
     if (finished || busy()) return;
     finish();
+    // Mouse-exit and touch-scroll triggers are pointer input, even without a click.
+    document.documentElement.dataset.demoInput = 'pointer';
     openDialog({ currentTarget: document.activeElement || document.body, offer: 'exit' });
   };
 
